@@ -1,3 +1,5 @@
+import { EquityCalculator } from "@/components/equity/EquityCalculator";
+
 // import Image from "next/image";
 
 // export default function Home() {
@@ -64,11 +66,5 @@
 //   );
 // }
 export default function Home() {
-  return (
-    <main className="flex items-center justify-center h-screen bg-blue-500">
-      <h1 className="text-white text-4xl font-bold">
-        Tailwind is working 🎉
-      </h1>
-    </main>
-  );
+  return <EquityCalculator />;
 }
