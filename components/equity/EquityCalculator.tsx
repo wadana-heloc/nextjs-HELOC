@@ -27,10 +27,17 @@ const MAX_EQUITY_PERCENT = 0.6;
 export function EquityCalculator() {
   const [community, setCommunity] = useState<Community>("Dubai Marina");
   const [propertyType, setPropertyType] = useState<PropertyType>("Apartment");
+  const [floorLevel, setFloorLevel] = useState<string>("");
   const [sizeSqft, setSizeSqft] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [valueAed, setValueAed] = useState<number | null>(null);
+
+  const parsedFloorLevel = useMemo(() => {
+    const normalized = floorLevel.replace(/,/g, "").trim();
+    const n = normalized === "" ? NaN : Number(normalized);
+    return Number.isFinite(n) ? n : NaN;
+  }, [floorLevel]);
 
   const parsedSize = useMemo(() => {
     // Allow users to paste values like "1,250" by stripping commas.
@@ -39,8 +46,12 @@ export function EquityCalculator() {
     return Number.isFinite(n) ? n : NaN;
   }, [sizeSqft]);
 
+  const floorTrimmed = floorLevel.trim();
+  const floorValid =
+    floorTrimmed === "" || (Number.isFinite(parsedFloorLevel) && parsedFloorLevel >= 0);
+
   const canSubmit =
-    !isSubmitting && Number.isFinite(parsedSize) && parsedSize > 0;
+    !isSubmitting && Number.isFinite(parsedSize) && parsedSize > 0 && floorValid;
 
   const maxEquityAed =
     valueAed === null ? null : Math.floor(valueAed * MAX_EQUITY_PERCENT);
@@ -64,6 +75,7 @@ export function EquityCalculator() {
         community,
         propertyType,
         sizeSqft: parsedSize,
+        floorLevel: floorTrimmed === "" ? undefined : parsedFloorLevel,
       });
       setValueAed(res.valueAed);
     } catch (e) {
@@ -118,6 +130,29 @@ export function EquityCalculator() {
                 </option>
               ))}
             </select>
+          </div>
+
+          <div>
+            <FieldLabel htmlFor="floorLevel">Floor level</FieldLabel>
+            <input
+              id="floorLevel"
+              inputMode="numeric"
+              type="number"
+              min={0}
+              step={1}
+              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-900/10"
+              value={floorLevel}
+              onChange={(e) => setFloorLevel(e.target.value)}
+              placeholder="Optional"
+            />
+            <HelpText>
+              {floorTrimmed === ""
+                ? "Optional; enter the level if known."
+                : !floorValid
+                ? "Please enter a non-negative number for floor level."
+                : "Looks good."
+              }
+            </HelpText>
           </div>
 
           <div>

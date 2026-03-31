@@ -1,6 +1,8 @@
 from typing import List
 
 from fastapi import Depends, FastAPI, HTTPException
+# added by mira 
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -10,7 +12,14 @@ from schemas import EstimateIn, EstimateOut, UserOut
 import models  # noqa: F401 - registers models on Base
 
 app = FastAPI()
-
+# added by mira
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+#
 
 def seed_mock_data(db: Session) -> None:
     """Insert demo records once for local development."""
