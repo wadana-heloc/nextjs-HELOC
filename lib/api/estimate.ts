@@ -67,7 +67,7 @@ export async function estimatePropertyValue(
     return { valueAed: fakeEstimateValueAed(req) };
   }
 
-  const baseUrl = "http://localhost:8000";
+  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
   if (!baseUrl) {
     throw new Error(
       "Missing NEXT_PUBLIC_API_BASE_URL (needed when NEXT_PUBLIC_USE_FAKE_ESTIMATE=false).",

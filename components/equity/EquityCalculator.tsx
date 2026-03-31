@@ -6,6 +6,7 @@ import { estimatePropertyValue } from "@/lib/api/estimate";
 import { formatAed } from "@/lib/format/money";
 import { FieldLabel } from "@/components/ui/FieldLabel";
 import { HelpText } from "@/components/ui/HelpText";
+import { useRouter } from "next/navigation";
 
 const COMMUNITIES: Community[] = [
   "Dubai Marina",
@@ -25,6 +26,7 @@ const PROPERTY_TYPES: PropertyType[] = ["Apartment", "Villa", "Townhouse"];
 const MAX_EQUITY_PERCENT = 0.6;
 
 export function EquityCalculator() {
+  const router = useRouter();
   const [community, setCommunity] = useState<Community>("Dubai Marina");
   const [propertyType, setPropertyType] = useState<PropertyType>("Apartment");
   const [floorLevel, setFloorLevel] = useState<string>("");
@@ -149,8 +151,8 @@ export function EquityCalculator() {
               {floorTrimmed === ""
                 ? "Optional; enter the level if known."
                 : !floorValid
-                ? "Please enter a non-negative number for floor level."
-                : "Looks good."
+                  ? "Please enter a non-negative number for floor level."
+                  : "Looks good."
               }
             </HelpText>
           </div>
@@ -205,7 +207,25 @@ export function EquityCalculator() {
               <p className="mt-3 text-xs text-slate-600">
                 Estimates shown are not a guarantee.
               </p>
+               {/* The "Apply Now" button would take the user to an application page, passing the relevant data as query parameters. */}
+              <button
+                onClick={() => {
+                  const query = new URLSearchParams({
+                    community,
+                    propertyType,
+                    sizeSqft,
+                  }).toString();
+
+                  router.push(`/apply?${query}`);
+                }}
+                className="mt-4 w-full rounded-lg bg-blue-600 py-2.5 text-white font-medium hover:bg-blue-500"
+              >
+                Apply Now →
+              </button>
             </div>
+
+
+
           ) : null}
         </div>
       </div>
