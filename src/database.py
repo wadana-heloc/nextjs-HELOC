@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, inspect, text
 from sqlalchemy.orm import declarative_base, sessionmaker
 
 # Load DATABASE_URL from the .env file located next to this module.
@@ -36,3 +36,45 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+def ensure_db_schema() -> None:
+    """
+    Apply minimal schema upgrades for local/dev environments.
+
+    `Base.metadata.create_all()` does NOT alter existing tables, so if you already
+    have a persisted Postgres volume from an older model, new columns may be
+    missing and the app will crash on startup.
+    """
+    insp = inspect(engine)
+    tables = set(insp.get_table_names())
+
+    with engine.begin() as conn:
+        if "users" in tables:
+            user_cols = {c["name"] for c in insp.get_columns("users")}
+            if "created_at" not in user_cols:
+                conn.execute(
+                    text(
+                        "ALTER TABLE users ADD COLUMN created_at TIMESTAMPTZ NOT NULL DEFAULT now()"
+                    )
+                )
+
+        if "properties" in tables:
+            prop_cols = {c["name"] for c in insp.get_columns("properties")}
+            if "created_at" not in prop_cols:
+                conn.execute(
+                    text(
+                        "ALTER TABLE properties ADD COLUMN created_at TIMESTAMPTZ NOT NULL DEFAULT now()"
+                    )
+                )
+
+        if "applications" in tables:
+            app_cols = {c["name"] for c in insp.get_columns("applications")}
+            if "user_id" not in app_cols:
+                conn.execute(text("ALTER TABLE applications ADD COLUMN user_id INTEGER"))
+            if "created_at" not in app_cols:
+                conn.execute(
+                    text(
+                        "ALTER TABLE applications ADD COLUMN created_at TIMESTAMPTZ NOT NULL DEFAULT now()"
+                    )
+                )

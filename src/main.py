@@ -1,30 +1,46 @@
-from typing import List
+"""FastAPI application entrypoint for the HELOC API's.
+
+This module wires together:
+- the FastAPI app instance and middleware (e.g. CORS)
+- database lifecycle hooks on startup
+- routes for health checks, user listing, and value estimation
+- seeding logic for mock data and DLD price information
+"""
+
+from typing import Dict, List, Tuple
 
 from fastapi import Depends, FastAPI, HTTPException
-# added by mira 
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from database import Base, SessionLocal, engine, get_db
+import config
+from database import Base, SessionLocal, engine, get_db, ensure_db_schema
 from schemas import EstimateIn, EstimateOut, UserOut
 
 import models  # noqa: F401 - registers models on Base
 
 app = FastAPI()
-# added by mira
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=list(config.FRONTEND_ALLOWED_ORIGINS),
     allow_methods=["*"],
     allow_headers=["*"],
 )
-#
 
-def seed_mock_data(db: Session) -> None:
-    """Insert demo records once for local development."""
-    if db.execute(select(models.User)).first() is None:
-        db.add_all(
+
+def seed_mock_data(db_session: Session) -> None:
+    """Insert demo user, property, and application records for local development.
+
+    **Inputs**
+    - `db_session`: SQLAlchemy session used to query and insert seed data.
+
+    **Outputs**
+    - Returns `None`. Commits any inserted seed records to the database.
+    """
+    if db_session.execute(select(models.User)).first() is None:
+        db_session.add_all(
             [
                 models.User(name="Ahmed Al Mansoori", email="ahmed@example.com"),
                 models.User(name="Sara Khalid", email="sara@example.com"),
@@ -32,8 +48,8 @@ def seed_mock_data(db: Session) -> None:
             ]
         )
 
-    if db.execute(select(models.Property)).first() is None:
-        db.add_all(
+    if db_session.execute(select(models.Property)).first() is None:
+        db_session.add_all(
             [
                 models.Property(
                     community="Dubai Marina",
@@ -56,15 +72,21 @@ def seed_mock_data(db: Session) -> None:
             ]
         )
 
-    if db.execute(select(models.Application)).first() is None:
-        first_property_id = db.execute(select(models.Property.id).order_by(models.Property.id.asc())).scalar()
+    if db_session.execute(select(models.Application)).first() is None:
+        first_user_id = db_session.execute(
+            select(models.User.id).order_by(models.User.id.asc())
+        ).scalar()
+        first_property_id = db_session.execute(
+            select(models.Property.id).order_by(models.Property.id.asc())
+        ).scalar()
         if first_property_id is not None:
-            db.add_all(
+            db_session.add_all(
                 [
                     models.Application(
                         borrower_name="Mariam Youssef",
                         borrower_email="mariam@example.com",
                         borrower_emirates_id="784-1992-1234567-1",
+                        user_id=first_user_id,
                         property_id=first_property_id,
                         requested_amount=950000.0,
                         status="submitted",
@@ -73,6 +95,7 @@ def seed_mock_data(db: Session) -> None:
                         borrower_name="Hamad Saeed",
                         borrower_email="hamad@example.com",
                         borrower_emirates_id="784-1989-7654321-2",
+                        user_id=first_user_id,
                         property_id=first_property_id,
                         requested_amount=1250000.0,
                         status="under_review",
@@ -80,63 +103,226 @@ def seed_mock_data(db: Session) -> None:
                 ]
             )
 
-    db.commit()
+    db_session.commit()
+
+
+def _normalize_community_and_type(community_name: str, property_type: str) -> Tuple[str, str]:
+    """Normalize community and property-type text for consistent lookups.
+
+    **Inputs**
+    - `community_name`: Community name as provided by the client or dataset.
+    - `property_type`: Property type as provided by the client or dataset.
+
+    **Outputs**
+    - 2-tuple of `(community_norm, property_type_norm)` where both values are
+      lowercased and stripped versions of the inputs.
+    """
+    return community_name.strip().lower(), property_type.strip().lower()
+
+
+def seed_dld_price_data(db_session: Session) -> Dict[Tuple[str, str], float]:
+    """Load DLD JSON price data into the database and build an in-memory cache.
+
+    **Inputs**
+    - `db_session`: SQLAlchemy session used to read and write DLD price rows.
+
+    **Outputs**
+    - Returns a dictionary mapping `(community_norm, property_type_norm)` to
+      `average_price_per_sqft` floats.
+    """
+    from models import DLDCommunityPrice
+
+    import json
+
+    with config.DLD_PRICE_JSON_PATH.open("r", encoding="utf-8") as f:
+        records = json.load(f)
+
+    # DLD dataset can contain duplicate (community, property type) keys.
+    # Aggregate first so we don't try to insert the same unique key twice in one run.
+    file_aggregated: Dict[Tuple[str, str], Tuple[str, str, float]] = {}
+
+    for record in records:
+        community_raw = str(record.get("community name", "")).strip()
+        property_type_raw = str(record.get("property type", "")).strip()
+        avg_price = record.get("average price per sqft")
+
+        if not community_raw or not property_type_raw:
+            continue
+        if avg_price is None:
+            continue
+
+        avg_price_f = float(avg_price)
+        if avg_price_f <= 0:
+            continue
+
+        community_norm, property_type_norm = _normalize_community_and_type(
+            community_raw, property_type_raw
+        )
+
+        file_aggregated[(community_norm, property_type_norm)] = (
+            community_raw,
+            property_type_raw,
+            avg_price_f,
+        )
+
+    lookup: Dict[Tuple[str, str], float] = {}
+    for (community_norm, property_type_norm), (community_raw, property_type_raw, avg_price_f) in file_aggregated.items():
+        stmt = select(DLDCommunityPrice).where(
+            DLDCommunityPrice.community_name_normalized == community_norm,
+            DLDCommunityPrice.property_type_normalized == property_type_norm,
+        )
+        existing = db_session.execute(stmt).scalar_one_or_none()
+
+        if existing is not None:
+            existing.average_price_per_sqft = avg_price_f
+        else:
+            db_session.add(
+                DLDCommunityPrice(
+                    community_name_raw=community_raw,
+                    community_name_normalized=community_norm,
+                    property_type_raw=property_type_raw,
+                    property_type_normalized=property_type_norm,
+                    average_price_per_sqft=avg_price_f,
+                )
+            )
+
+        lookup[(community_norm, property_type_norm)] = avg_price_f
+
+    db_session.commit()
+    return lookup
+
+
+def build_price_cache_from_db(db_session: Session) -> Dict[Tuple[str, str], float]:
+    """Build an in-memory price cache from the `dld_community_prices` table.
+
+    **Inputs**
+    - `db_session`: SQLAlchemy session used to query all DLD price rows.
+
+    **Outputs**
+    - Returns a dictionary mapping `(community_norm, property_type_norm)` to
+      `average_price_per_sqft` floats, suitable for fast in-memory lookups.
+    """
+    from models import DLDCommunityPrice
+
+    rows = db_session.execute(select(DLDCommunityPrice)).scalars().all()
+    return {
+        (row.community_name_normalized, row.property_type_normalized): row.average_price_per_sqft
+        for row in rows
+    }
+
+
+price_cache: Dict[Tuple[str, str], float] = {}
+eligible_community_norms = {community.strip().lower() for community in config.ELIGIBLE_COMMUNITIES}
+eligible_property_types = {property_type.strip().lower() for property_type in config.ELIGIBLE_PROPERTY_TYPES}
 
 
 @app.on_event("startup")
 def on_startup() -> None:
+    """FastAPI startup hook to create tables, sync schema, and seed data.
+
+    **Inputs**
+    - No explicit inputs; uses global database engine and configuration.
+
+    **Outputs**
+    - Returns `None`. Ensures tables and columns exist, seeds mock data,
+      and initializes the in-memory DLD price cache.
+    """
     Base.metadata.create_all(bind=engine)
-    db = SessionLocal()
+    # If you already have a persisted Postgres volume, new columns may be missing.
+    ensure_db_schema()
+    db_session = SessionLocal()
     try:
-        seed_mock_data(db)
+        seed_mock_data(db_session)
+        # Load DLD average prices into the DB and build cache for fast lookup.
+        global price_cache
+        seed_dld_price_data(db_session)
+        price_cache = build_price_cache_from_db(db_session)
     finally:
-        db.close()
+        db_session.close()
 
 
 @app.get("/health")
 def health_check():
+    """Simple liveness endpoint used by monitoring and deployment probes.
+
+    **Inputs**
+    - No request body or query parameters.
+
+    **Outputs**
+    - JSON object with a `status` field indicating service health.
+    """
     return {"status": "healthy"}
 
 
 @app.get("/users", response_model=List[UserOut])
-def get_users(db: Session = Depends(get_db)):
+def get_users(db_session: Session = Depends(get_db)) -> List[UserOut]:
+    """Return all users currently stored in the database.
+
+    **Inputs**
+    - `db_session`: SQLAlchemy session dependency injected by FastAPI.
+
+    **Outputs**
+    - List of `UserOut` Pydantic models representing persisted users.
+    """
     stmt = select(models.User)
-    users = db.execute(stmt).scalars().all()
+    users: List[UserOut] = db_session.execute(stmt).scalars().all()
     return users
-
-
-COMMUNITY_PRICE_PER_SQFT_AED: dict[str, float] = {
-    # Rough 2025-era averages (AED / sqft). Intentionally hardcoded for estimation only.
-    "downtown dubai": 2800.0,
-    "palm jumeirah": 4150.0,
-    "dubai marina": 2100.0,
-    "business bay": 2600.0,
-    "jumeirah village circle": 1450.0,
-    "jvc": 1450.0,
-    "jumeirah lakes towers": 1700.0,
-    "jlt": 1700.0,
-    "dubai hills estate": 2400.0,
-    "arabian ranches": 2375.0,
-    "arjan": 1550.0,
-    "al barsha": 1300.0,
-}
-
 
 @app.post("/estimate", response_model=EstimateOut)
 def estimate(payload: EstimateIn) -> EstimateOut:
-    community_key = payload.community.strip().lower()
-    if not community_key:
+    """Estimate a property value in AED using DLD price-per-sqft data.
+
+    **Inputs**
+    - `payload`: `EstimateIn` Pydantic model containing community, property type,
+      and `size_sqft` for the property being valued.
+
+    **Outputs**
+    - `EstimateOut` model with a single `estimated_value_aed` numeric field.
+    - Raises `HTTPException` with status 400 for invalid or unsupported inputs.
+    """
+    community_raw = payload.community.strip()
+    property_type_raw = payload.property_type.strip()
+
+    if not community_raw:
         raise HTTPException(status_code=400, detail="community is required")
+
+    if not property_type_raw:
+        raise HTTPException(status_code=400, detail="property_type is required")
 
     if payload.size_sqft <= 0:
         raise HTTPException(status_code=400, detail="size_sqft must be > 0")
 
-    price = COMMUNITY_PRICE_PER_SQFT_AED.get(community_key)
-    if price is None:
-        supported = sorted({k for k in COMMUNITY_PRICE_PER_SQFT_AED.keys() if k not in {"jvc", "jlt"}})
+    community_norm, property_type_norm = _normalize_community_and_type(
+        community_raw, property_type_raw
+    )
+
+    if community_norm not in eligible_community_norms:
         raise HTTPException(
             status_code=400,
-            detail={"message": "Unsupported community", "supported_communities": supported},
+            detail={
+                "message": "Unsupported or ineligible community",
+                "supported_communities": sorted(eligible_community_norms),
+            },
+        )
+
+    if property_type_norm not in eligible_property_types:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "message": "Unsupported or ineligible property type",
+                "supported_property_types": sorted(eligible_property_types),
+            },
+        )
+
+    price = price_cache.get((community_norm, property_type_norm))
+    if price is None:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "message": "No DLD price data for community/property_type combination",
+                "community": community_raw,
+                "property_type": property_type_raw,
+            },
         )
 
     estimated_value = price * float(payload.size_sqft)
