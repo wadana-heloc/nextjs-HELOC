@@ -1,0 +1,467 @@
+[
+  {
+    "community name": "AL FURJAN",
+    "property type": "apartment",
+    "average price per sqft": 11599.27
+  },
+  {
+    "community name": "AL KHAIL HEIGHTS",
+    "property type": "apartment",
+    "average price per sqft": 9381.78
+  },
+  {
+    "community name": "ARABIAN RANCHES I",
+    "property type": "villa",
+    "average price per sqft": 7533.85
+  },
+  {
+    "community name": "ARABIAN RANCHES III",
+    "property type": "villa",
+    "average price per sqft": 20489.52
+  },
+  {
+    "community name": "ARJAN",
+    "property type": "apartment",
+    "average price per sqft": 17235.69
+  },
+  {
+    "community name": "Al Hebiah Fifth",
+    "property type": "apartment",
+    "average price per sqft": 19683.57
+  },
+  {
+    "community name": "Al Hebiah Fifth",
+    "property type": "villa",
+    "average price per sqft": 22296.4
+  },
+  {
+    "community name": "Al Hebiah Fourth",
+    "property type": "villa",
+    "average price per sqft": 15884.15
+  },
+  {
+    "community name": "Al Hebiah Sixth",
+    "property type": "villa",
+    "average price per sqft": 19820.25
+  },
+  {
+    "community name": "Al Khairan First",
+    "property type": "apartment",
+    "average price per sqft": 26567.02
+  },
+  {
+    "community name": "Al Kifaf",
+    "property type": "apartment",
+    "average price per sqft": 25473.7
+  },
+  {
+    "community name": "Al Satwa",
+    "property type": "apartment",
+    "average price per sqft": 24149.02
+  },
+  {
+    "community name": "Al Warqa First",
+    "property type": "apartment",
+    "average price per sqft": 21527.95
+  },
+  {
+    "community name": "Al Wasl",
+    "property type": "apartment",
+    "average price per sqft": 42842.34
+  },
+  {
+    "community name": "Al Yelayiss 1",
+    "property type": "villa",
+    "average price per sqft": 19833.02
+  },
+  {
+    "community name": "Al Yelayiss 2",
+    "property type": "apartment",
+    "average price per sqft": 14958.02
+  },
+  {
+    "community name": "Al Yelayiss 2",
+    "property type": "villa",
+    "average price per sqft": 12996.54
+  },
+  {
+    "community name": "Al Yelayiss 5",
+    "property type": "villa",
+    "average price per sqft": 1007.69
+  },
+  {
+    "community name": "BLUEWATERS",
+    "property type": "apartment",
+    "average price per sqft": 102897.13
+  },
+  {
+    "community name": "BURJ KHALIFA",
+    "property type": "apartment",
+    "average price per sqft": 21238.26
+  },
+  {
+    "community name": "BUSINESS BAY",
+    "property type": "apartment",
+    "average price per sqft": 24685.01
+  },
+  {
+    "community name": "BUSINESS PARK",
+    "property type": "apartment",
+    "average price per sqft": 28000.81
+  },
+  {
+    "community name": "Bukadra",
+    "property type": "apartment",
+    "average price per sqft": 29648.69
+  },
+  {
+    "community name": "Business Bay",
+    "property type": "apartment",
+    "average price per sqft": 30551.88
+  },
+  {
+    "community name": "DAMAC HILLS",
+    "property type": "apartment",
+    "average price per sqft": 10524.25
+  },
+  {
+    "community name": "DISCOVERY GARDENS",
+    "property type": "apartment",
+    "average price per sqft": 8994.88
+  },
+  {
+    "community name": "DMCC-EZ2",
+    "property type": "apartment",
+    "average price per sqft": 31022.23
+  },
+  {
+    "community name": "DOWN TOWN JABAL ALI",
+    "property type": "apartment",
+    "average price per sqft": 8515.95
+  },
+  {
+    "community name": "DUBAI CREEK HARBOUR",
+    "property type": "apartment",
+    "average price per sqft": 21056.56
+  },
+  {
+    "community name": "DUBAI HEALTHCARE CITY - PHASE 2",
+    "property type": "apartment",
+    "average price per sqft": 15477.21
+  },
+  {
+    "community name": "DUBAI HILLS",
+    "property type": "apartment",
+    "average price per sqft": 27308.75
+  },
+  {
+    "community name": "DUBAI HILLS",
+    "property type": "villa",
+    "average price per sqft": 20841.55
+  },
+  {
+    "community name": "DUBAI INDUSTRIAL CITY",
+    "property type": "apartment",
+    "average price per sqft": 14369.13
+  },
+  {
+    "community name": "DUBAI INVESTMENT PARK FIRST",
+    "property type": "villa",
+    "average price per sqft": 4460.64
+  },
+  {
+    "community name": "DUBAI INVESTMENT PARK SECOND",
+    "property type": "apartment",
+    "average price per sqft": 7531.8
+  },
+  {
+    "community name": "DUBAI LAND RESIDENCE COMPLEX",
+    "property type": "apartment",
+    "average price per sqft": 12827.8
+  },
+  {
+    "community name": "DUBAI MARINA",
+    "property type": "apartment",
+    "average price per sqft": 17315.95
+  },
+  {
+    "community name": "DUBAI MARITIME CITY",
+    "property type": "apartment",
+    "average price per sqft": 15178.87
+  },
+  {
+    "community name": "DUBAI PRODUCTION CITY",
+    "property type": "apartment",
+    "average price per sqft": 12579.95
+  },
+  {
+    "community name": "DUBAI SCIENCE PARK",
+    "property type": "apartment",
+    "average price per sqft": 14707.27
+  },
+  {
+    "community name": "DUBAI SOUTH",
+    "property type": "apartment",
+    "average price per sqft": 11500.41
+  },
+  {
+    "community name": "DUBAI SPORTS CITY",
+    "property type": "apartment",
+    "average price per sqft": 14012.29
+  },
+  {
+    "community name": "DUBAI STUDIO CITY",
+    "property type": "apartment",
+    "average price per sqft": 15441.49
+  },
+  {
+    "community name": "DUBAI WATER CANAL",
+    "property type": "apartment",
+    "average price per sqft": 22804.27
+  },
+  {
+    "community name": "Dubai Investment Park Second",
+    "property type": "apartment",
+    "average price per sqft": 16684.35
+  },
+  {
+    "community name": "EMAAR SOUTH",
+    "property type": "apartment",
+    "average price per sqft": 4295.73
+  },
+  {
+    "community name": "EMAAR SOUTH",
+    "property type": "villa",
+    "average price per sqft": 13684.39
+  },
+  {
+    "community name": "EMIRATE LIVING",
+    "property type": "villa",
+    "average price per sqft": 10749.25
+  },
+  {
+    "community name": "HORIZON",
+    "property type": "apartment",
+    "average price per sqft": 24517.3
+  },
+  {
+    "community name": "Hadaeq Sheikh Mohammed Bin Rashid",
+    "property type": "apartment",
+    "average price per sqft": 26752.49
+  },
+  {
+    "community name": "INTERNATIONAL CITY PH 1",
+    "property type": "apartment",
+    "average price per sqft": 8939.77
+  },
+  {
+    "community name": "INTERNATIONAL CITY PH 2 & 3",
+    "property type": "apartment",
+    "average price per sqft": 10361.98
+  },
+  {
+    "community name": "JADDAF WATERFRONT",
+    "property type": "apartment",
+    "average price per sqft": 19940.06
+  },
+  {
+    "community name": "JUMEIRAH BEACH RESIDENCE",
+    "property type": "apartment",
+    "average price per sqft": 22607.09
+  },
+  {
+    "community name": "JUMEIRAH GOLF",
+    "property type": "apartment",
+    "average price per sqft": 14775.1
+  },
+  {
+    "community name": "JUMEIRAH LAKES TOWERS",
+    "property type": "apartment",
+    "average price per sqft": 16632.9
+  },
+  {
+    "community name": "JUMEIRAH VILLAGE CIRCLE",
+    "property type": "apartment",
+    "average price per sqft": 12561.21
+  },
+  {
+    "community name": "JUMEIRAH VILLAGE CIRCLE",
+    "property type": "villa",
+    "average price per sqft": 13435.86
+  },
+  {
+    "community name": "JUMEIRAH VILLAGE TRIANGLE",
+    "property type": "apartment",
+    "average price per sqft": 13272.65
+  },
+  {
+    "community name": "Jabal Ali First",
+    "property type": "apartment",
+    "average price per sqft": 31722.34
+  },
+  {
+    "community name": "LIVING LEGENDS",
+    "property type": "apartment",
+    "average price per sqft": 8554.54
+  },
+  {
+    "community name": "LIWAN",
+    "property type": "apartment",
+    "average price per sqft": 12594.88
+  },
+  {
+    "community name": "MAJAN",
+    "property type": "apartment",
+    "average price per sqft": 11232.05
+  },
+  {
+    "community name": "MBR DISTRICT 1",
+    "property type": "apartment",
+    "average price per sqft": 29461.28
+  },
+  {
+    "community name": "MBR DISTRICT 1",
+    "property type": "villa",
+    "average price per sqft": 3499.5
+  },
+  {
+    "community name": "MEYDAN ONE",
+    "property type": "apartment",
+    "average price per sqft": 25166.45
+  },
+  {
+    "community name": "MINA RASHID",
+    "property type": "apartment",
+    "average price per sqft": 10028.83
+  },
+  {
+    "community name": "MOTOR CITY",
+    "property type": "apartment",
+    "average price per sqft": 14201.44
+  },
+  {
+    "community name": "MUDON",
+    "property type": "villa",
+    "average price per sqft": 2866.49
+  },
+  {
+    "community name": "Madinat Al Mataar",
+    "property type": "apartment",
+    "average price per sqft": 19633.43
+  },
+  {
+    "community name": "Madinat Dubai Almelaheyah",
+    "property type": "apartment",
+    "average price per sqft": 39966.57
+  },
+  {
+    "community name": "Madinat Hind 3",
+    "property type": "villa",
+    "average price per sqft": 896.82
+  },
+  {
+    "community name": "Marsa Dubai",
+    "property type": "apartment",
+    "average price per sqft": 46957.32
+  },
+  {
+    "community name": "Me'Aisem First",
+    "property type": "villa",
+    "average price per sqft": 46804.66
+  },
+  {
+    "community name": "Mirdif",
+    "property type": "apartment",
+    "average price per sqft": 14007.64
+  },
+  {
+    "community name": "Mirdif",
+    "property type": "villa",
+    "average price per sqft": 9881.66
+  },
+  {
+    "community name": "Muhaisanah First",
+    "property type": "apartment",
+    "average price per sqft": 8193.83
+  },
+  {
+    "community name": "NAD AL SHEBA GARDENS",
+    "property type": "apartment",
+    "average price per sqft": 16730.33
+  },
+  {
+    "community name": "Nad Al Shiba First",
+    "property type": "villa",
+    "average price per sqft": 14137.78
+  },
+  {
+    "community name": "PALM JUMEIRAH",
+    "property type": "apartment",
+    "average price per sqft": 21354.19
+  },
+  {
+    "community name": "Palm Deira",
+    "property type": "apartment",
+    "average price per sqft": 29702.07
+  },
+  {
+    "community name": "Ras Al Khor Industrial First",
+    "property type": "apartment",
+    "average price per sqft": 27125.29
+  },
+  {
+    "community name": "SAMA AL JADAF",
+    "property type": "apartment",
+    "average price per sqft": 19736.89
+  },
+  {
+    "community name": "SILICON OASIS",
+    "property type": "apartment",
+    "average price per sqft": 8771.0
+  },
+  {
+    "community name": "SOBHA HEARTLAND",
+    "property type": "apartment",
+    "average price per sqft": 18988.61
+  },
+  {
+    "community name": "TECOM SITE A",
+    "property type": "apartment",
+    "average price per sqft": 31702.94
+  },
+  {
+    "community name": "TOWN SQUARE",
+    "property type": "apartment",
+    "average price per sqft": 13414.13
+  },
+  {
+    "community name": "VILLANOVA",
+    "property type": "villa",
+    "average price per sqft": 14183.96
+  },
+  {
+    "community name": "Wadi Al Safa 3",
+    "property type": "villa",
+    "average price per sqft": 24449.42
+  },
+  {
+    "community name": "Wadi Al Safa 5",
+    "property type": "apartment",
+    "average price per sqft": 16383.39
+  },
+  {
+    "community name": "Wadi Al Safa 5",
+    "property type": "villa",
+    "average price per sqft": 15545.12
+  },
+  {
+    "community name": "Zaabeel First",
+    "property type": "apartment",
+    "average price per sqft": 66731.03
+  },
+  {
+    "community name": "Zaabeel Second",
+    "property type": "apartment",
+    "average price per sqft": 33526.63
+  }
+]
