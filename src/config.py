@@ -32,6 +32,7 @@ FRONTEND_ALLOWED_ORIGINS: Final[Iterable[str]] = (
 CREDIT_SCORE_MIN: Final[int] = 680
 DBR_MAX: Final[float] = 0.5  # 50% debt-burden ratio cap
 LTV_MAX: Final[float] = 0.8  # 80% loan-to-value cap
+APPLICATION_INITIAL_STATUS: Final[str] = "pending"  # Initial status for new applications
 
 
 # ---------------------------------------------------------------------------

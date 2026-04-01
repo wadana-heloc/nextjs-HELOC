@@ -18,3 +18,18 @@ class EstimateIn(BaseModel): #this is the input schema for the estimate endpoint
 class EstimateOut(BaseModel): #this is the output schema for the estimate endpoint
     estimated_value_aed: float
 
+
+class ApplicationIn(BaseModel): #this is the input schema for the applications endpoint
+    full_name: str
+    email: str
+    emirates_id: str
+    phone: str
+    community: str
+    property_type: str
+    size_sqft: float
+
+
+class ApplicationOut(BaseModel): #this is the output schema for the applications endpoint
+    id: int
+    status: str
+

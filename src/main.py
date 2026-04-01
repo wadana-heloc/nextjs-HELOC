@@ -16,7 +16,7 @@ from sqlalchemy.orm import Session
 
 import config
 from database import Base, SessionLocal, engine, get_db, ensure_db_schema
-from schemas import EstimateIn, EstimateOut, UserOut
+from schemas import EstimateIn, EstimateOut, UserOut, ApplicationIn, ApplicationOut
 
 import models  # noqa: F401 - registers models on Base
 
@@ -327,3 +327,86 @@ def estimate(payload: EstimateIn) -> EstimateOut:
 
     estimated_value = price * float(payload.size_sqft)
     return EstimateOut(estimated_value_aed=estimated_value)
+
+
+@app.post("/applications", response_model=ApplicationOut)
+def create_application(payload: ApplicationIn, db_session: Session = Depends(get_db)) -> ApplicationOut:
+    """Create a new HELOC application for a borrower.
+
+    **Inputs**
+    - `payload`: `ApplicationIn` Pydantic model containing borrower details,
+      community, property type, and size information.
+    - `db_session`: SQLAlchemy session dependency injected by FastAPI.
+
+    **Outputs**
+    - `ApplicationOut` model with the initial application `status` set to "pending".
+    - Raises `HTTPException` with status 400 for invalid or unsupported inputs.
+    """
+    # Validate required fields
+    full_name = payload.full_name.strip()
+    email = payload.email.strip()
+    emirates_id = payload.emirates_id.strip()
+    phone = payload.phone.strip()
+    community = payload.community.strip()
+    property_type = payload.property_type.strip()
+
+    if not full_name:
+        raise HTTPException(status_code=400, detail="full_name is required")
+    if not email:
+        raise HTTPException(status_code=400, detail="email is required")
+    if not emirates_id:
+        raise HTTPException(status_code=400, detail="emirates_id is required")
+    if not phone:
+        raise HTTPException(status_code=400, detail="phone is required")
+    if not community:
+        raise HTTPException(status_code=400, detail="community is required")
+    if not property_type:
+        raise HTTPException(status_code=400, detail="property_type is required")
+    if payload.size_sqft <= 0:
+        raise HTTPException(status_code=400, detail="size_sqft must be > 0")
+
+    # Normalize and validate community and property type
+    community_norm, property_type_norm = _normalize_community_and_type(
+        community, property_type
+    )
+
+    if community_norm not in eligible_community_norms:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "message": "Unsupported or ineligible community",
+                "supported_communities": sorted(eligible_community_norms),
+            },
+        )
+
+    if property_type_norm not in eligible_property_types:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "message": "Unsupported or ineligible property type",
+                "supported_property_types": sorted(eligible_property_types),
+            },
+        )
+
+    # Create Property record
+    property_obj = models.Property(
+        community=community,
+        property_type=property_type,
+        size_sqft=payload.size_sqft,
+    )
+    db_session.add(property_obj)
+    db_session.flush()  # Flush to get the auto-generated id
+
+    # Create Application record with initial status from config
+    application = models.Application(
+        borrower_name=full_name,
+        borrower_email=email,
+        borrower_emirates_id=emirates_id,
+        property_id=property_obj.id,
+        requested_amount=0.0,  # Default amount, can be calculated later
+        status=config.APPLICATION_INITIAL_STATUS,
+    )
+    db_session.add(application)
+    db_session.commit()
+
+    return ApplicationOut(id=application.id, status=config.APPLICATION_INITIAL_STATUS)
