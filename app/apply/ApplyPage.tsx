@@ -4,10 +4,11 @@ import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { FieldLabel } from "@/components/ui/FieldLabel";
 import { HelpText } from "@/components/ui/HelpText";
+import { useRouter } from "next/navigation";
 
 export default function ApplyPage() {
   const params = useSearchParams();
-
+  const router = useRouter();
   // Prefill values from calculator
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -31,7 +32,7 @@ export default function ApplyPage() {
 
   //function that handels the form submission. It sends a POST request to the backend API with the form data. If the request is successful, it shows a success message. If there's an error, it shows an error message.
   async function handleSubmit() {
-    
+
     setLoading(true);
     setError(null);
 
@@ -60,6 +61,11 @@ export default function ApplyPage() {
       }
 
       setSuccess(true);
+          const data = await res.json();
+    // 👉 redirect to result page with id
+    console.log("Application ID:", data.id);
+    router.push(`/application-status?id=${data.id}&status=${data.status}`);
+
     } catch (err) {
       setError("Something went wrong. Please try again.");
     } finally {
@@ -67,18 +73,18 @@ export default function ApplyPage() {
     }
   }
 
-  if (success) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="bg-green-50 border border-green-200 p-6 rounded-xl">
-          <h2 className="text-lg font-semibold text-green-800">
-            {/* Application submitted successfully 🎉 */}
-            Your application status : pending!
-          </h2>
-        </div>
-      </div>
-    );
-  }
+  // if (success) {
+  //   return (
+  //     <div className="min-h-screen flex items-center justify-center">
+  //       <div className="bg-green-50 border border-green-200 p-6 rounded-xl">
+  //         <h2 className="text-lg font-semibold text-green-800">
+  //           {/* Application submitted successfully 🎉 */}
+  //           Your application status : pending!
+  //         </h2>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
 
 
@@ -174,7 +180,7 @@ export default function ApplyPage() {
           </div>
 
           <button
-           type="button"
+            type="button"
             onClick={handleSubmit}
             disabled={loading}
             // className="w-full bg-slate-900 text-white py-2.5 rounded-lg mt-4"
