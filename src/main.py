@@ -16,7 +16,7 @@ from sqlalchemy.orm import Session
 
 import config
 from database import Base, SessionLocal, engine, get_db, ensure_db_schema
-from schemas import EstimateIn, EstimateOut, UserOut, ApplicationIn, ApplicationOut
+from schemas import EstimateIn, EstimateOut, UserOut, ApplicationIn, ApplicationOut, ApplicationListOut
 
 import models  # noqa: F401 - registers models on Base
 
@@ -410,3 +410,60 @@ def create_application(payload: ApplicationIn, db_session: Session = Depends(get
     db_session.commit()
 
     return ApplicationOut(id=application.id, status=config.APPLICATION_INITIAL_STATUS)
+
+
+@app.get("/applications")
+def get_applications(db_session: Session = Depends(get_db)):
+    """Return all HELOC applications as JSON.
+
+    **Inputs**
+    - `db_session`: SQLAlchemy session dependency injected by FastAPI.
+
+    **Outputs**
+    - JSON object with an `applications` key containing a list of all applications.
+    """
+    stmt = select(models.Application)
+    applications = db_session.execute(stmt).scalars().all()
+    return {
+        "applications": [
+            {
+                "id": app.id,
+                "borrower_name": app.borrower_name,
+                "borrower_email": app.borrower_email,
+                "borrower_emirates_id": app.borrower_emirates_id,
+                "property_id": app.property_id,
+                "user_id": app.user_id,
+                "requested_amount": app.requested_amount,
+                "status": app.status,
+            }
+            for app in applications
+        ]
+    }
+
+
+@app.get("/applications/{application_id}")
+def get_application(application_id: int, db_session: Session = Depends(get_db)):
+    """Return a single HELOC application by ID.
+
+    **Inputs**
+    - `application_id`: The ID of the application to retrieve.
+    - `db_session`: SQLAlchemy session dependency injected by FastAPI.
+
+    **Outputs**
+    - JSON object with the application details.
+    - Raises `HTTPException` with status 404 if not found.
+    """
+    stmt = select(models.Application).where(models.Application.id == application_id)
+    app = db_session.execute(stmt).scalar_one_or_none()
+    if app is None:
+        raise HTTPException(status_code=404, detail="Application not found")
+    return {
+        "id": app.id,
+        "borrower_name": app.borrower_name,
+        "borrower_email": app.borrower_email,
+        "borrower_emirates_id": app.borrower_emirates_id,
+        "property_id": app.property_id,
+        "user_id": app.user_id,
+        "requested_amount": app.requested_amount,
+        "status": app.status,
+    }
