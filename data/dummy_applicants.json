@@ -1,18 +1,3002 @@
 [
   {
-    "applicant_id": "example-1",
-    "first_name": "Jane",
-    "last_name": "Doe",
-    "email": "jane.doe@example.com",
-    "phone": "+1-555-000-0000",
-    "property_address": "123 Main St, Anytown, ST 00000",
+    "application_id": "app_001",
+    "community": "Dubai Marina",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 40123,
+    "credit_score": 708,
+    "credit_utilization_pct": 16,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_002",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 44446,
+    "credit_score": 581,
+    "credit_utilization_pct": 49,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 307141
+  },
+  {
+    "application_id": "app_003",
+    "community": "Downtown Dubai",
+    "property_type": "Apartment",
+    "monthly_income_aed": 34544,
+    "credit_score": 590,
+    "credit_utilization_pct": 84,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 486177
+  },
+  {
+    "application_id": "app_004",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 39851,
+    "credit_score": 769,
+    "credit_utilization_pct": 58,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2403513
+  },
+  {
+    "application_id": "app_005",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 17365,
+    "credit_score": 606,
+    "credit_utilization_pct": 79,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 935392
+  },
+  {
+    "application_id": "app_006",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 37620,
+    "credit_score": 810,
+    "credit_utilization_pct": 38,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_007",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 11104,
+    "credit_score": 770,
+    "credit_utilization_pct": 23,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_008",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 26210,
+    "credit_score": 717,
+    "credit_utilization_pct": 78,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_009",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 44641,
+    "credit_score": 540,
+    "credit_utilization_pct": 38,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_010",
+    "community": "Dubai Marina",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 42918,
+    "credit_score": 524,
+    "credit_utilization_pct": 65,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_011",
+    "community": "Dubai Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 23208,
+    "credit_score": 568,
+    "credit_utilization_pct": 18,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2252129
+  },
+  {
+    "application_id": "app_012",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 54583,
+    "credit_score": 542,
+    "credit_utilization_pct": 57,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_013",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 50395,
+    "credit_score": 787,
+    "credit_utilization_pct": 53,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2717945
+  },
+  {
+    "application_id": "app_014",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 33654,
+    "credit_score": 541,
+    "credit_utilization_pct": 65,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2993969
+  },
+  {
+    "application_id": "app_015",
+    "community": "DAMAC Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 40919,
+    "credit_score": 824,
+    "credit_utilization_pct": 24,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2500762
+  },
+  {
+    "application_id": "app_016",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 26674,
+    "credit_score": 592,
+    "credit_utilization_pct": 77,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_017",
+    "community": "JBR",
+    "property_type": "Villa",
+    "monthly_income_aed": 52884,
+    "credit_score": 675,
+    "credit_utilization_pct": 21,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_018",
+    "community": "MBR City",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 19492,
+    "credit_score": 736,
+    "credit_utilization_pct": 70,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1115218
+  },
+  {
+    "application_id": "app_019",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 43234,
+    "credit_score": 592,
+    "credit_utilization_pct": 85,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1575290
+  },
+  {
+    "application_id": "app_020",
+    "community": "Downtown Dubai",
+    "property_type": "Apartment",
+    "monthly_income_aed": 39556,
+    "credit_score": 658,
+    "credit_utilization_pct": 44,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_021",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 12902,
+    "credit_score": 646,
+    "credit_utilization_pct": 47,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2343786
+  },
+  {
+    "application_id": "app_022",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 26742,
+    "credit_score": 627,
+    "credit_utilization_pct": 70,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_023",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 10971,
+    "credit_score": 650,
+    "credit_utilization_pct": 21,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 880987
+  },
+  {
+    "application_id": "app_024",
+    "community": "Dubai Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 25693,
+    "credit_score": 757,
+    "credit_utilization_pct": 29,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 438660
+  },
+  {
+    "application_id": "app_025",
+    "community": "Dubai Marina",
+    "property_type": "Apartment",
+    "monthly_income_aed": 31348,
+    "credit_score": 816,
+    "credit_utilization_pct": 43,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_026",
+    "community": "MBR City",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 49438,
+    "credit_score": 819,
+    "credit_utilization_pct": 75,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_027",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 44119,
+    "credit_score": 728,
+    "credit_utilization_pct": 20,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 916187
+  },
+  {
+    "application_id": "app_028",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 29362,
+    "credit_score": 714,
+    "credit_utilization_pct": 21,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_029",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 14922,
+    "credit_score": 835,
+    "credit_utilization_pct": 71,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2713242
+  },
+  {
+    "application_id": "app_030",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 52015,
+    "credit_score": 827,
+    "credit_utilization_pct": 30,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1410765
+  },
+  {
+    "application_id": "app_031",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 54075,
+    "credit_score": 589,
+    "credit_utilization_pct": 75,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2186163
+  },
+  {
+    "application_id": "app_032",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 46701,
+    "credit_score": 694,
+    "credit_utilization_pct": 47,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 353421
+  },
+  {
+    "application_id": "app_033",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 24419,
+    "credit_score": 604,
+    "credit_utilization_pct": 28,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2903756
+  },
+  {
+    "application_id": "app_034",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 50934,
+    "credit_score": 572,
+    "credit_utilization_pct": 27,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2069579
+  },
+  {
+    "application_id": "app_035",
+    "community": "Downtown Dubai",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 15784,
+    "credit_score": 710,
+    "credit_utilization_pct": 53,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_036",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 27231,
+    "credit_score": 823,
+    "credit_utilization_pct": 75,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2995589
+  },
+  {
+    "application_id": "app_037",
+    "community": "MBR City",
+    "property_type": "Villa",
+    "monthly_income_aed": 47596,
+    "credit_score": 681,
+    "credit_utilization_pct": 76,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2248046
+  },
+  {
+    "application_id": "app_038",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 54893,
+    "credit_score": 538,
+    "credit_utilization_pct": 75,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_039",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 29978,
+    "credit_score": 687,
+    "credit_utilization_pct": 36,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2169275
+  },
+  {
+    "application_id": "app_040",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 40873,
+    "credit_score": 568,
+    "credit_utilization_pct": 79,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 786167
+  },
+  {
+    "application_id": "app_041",
+    "community": "Dubai Marina",
+    "property_type": "Apartment",
+    "monthly_income_aed": 29009,
+    "credit_score": 825,
+    "credit_utilization_pct": 78,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_042",
+    "community": "Downtown Dubai",
+    "property_type": "Villa",
+    "monthly_income_aed": 25266,
+    "credit_score": 805,
+    "credit_utilization_pct": 64,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2946903
+  },
+  {
+    "application_id": "app_043",
+    "community": "Dubai Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 54026,
+    "credit_score": 816,
+    "credit_utilization_pct": 25,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1870313
+  },
+  {
+    "application_id": "app_044",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 41988,
+    "credit_score": 725,
+    "credit_utilization_pct": 52,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_045",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 52800,
+    "credit_score": 773,
+    "credit_utilization_pct": 74,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 601329
+  },
+  {
+    "application_id": "app_046",
+    "community": "Dubai Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 43922,
+    "credit_score": 582,
+    "credit_utilization_pct": 30,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 423236
+  },
+  {
+    "application_id": "app_047",
+    "community": "JBR",
+    "property_type": "Villa",
+    "monthly_income_aed": 50024,
+    "credit_score": 611,
+    "credit_utilization_pct": 28,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_048",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 25051,
+    "credit_score": 721,
+    "credit_utilization_pct": 15,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_049",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 17224,
+    "credit_score": 804,
+    "credit_utilization_pct": 84,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1031241
+  },
+  {
+    "application_id": "app_050",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 40946,
+    "credit_score": 763,
+    "credit_utilization_pct": 42,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1503190
+  },
+  {
+    "application_id": "app_051",
+    "community": "Downtown Dubai",
+    "property_type": "Apartment",
+    "monthly_income_aed": 11944,
+    "credit_score": 609,
+    "credit_utilization_pct": 31,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_052",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 25148,
+    "credit_score": 635,
+    "credit_utilization_pct": 21,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_053",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 47745,
+    "credit_score": 711,
+    "credit_utilization_pct": 81,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 302535
+  },
+  {
+    "application_id": "app_054",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 50306,
+    "credit_score": 717,
+    "credit_utilization_pct": 70,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_055",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 13918,
+    "credit_score": 726,
+    "credit_utilization_pct": 65,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_056",
+    "community": "Dubai Marina",
+    "property_type": "Apartment",
+    "monthly_income_aed": 26175,
+    "credit_score": 598,
+    "credit_utilization_pct": 46,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 410815
+  },
+  {
+    "application_id": "app_057",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 23941,
+    "credit_score": 582,
+    "credit_utilization_pct": 45,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 820716
+  },
+  {
+    "application_id": "app_058",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 50070,
+    "credit_score": 616,
+    "credit_utilization_pct": 40,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_059",
+    "community": "MBR City",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 35379,
+    "credit_score": 832,
+    "credit_utilization_pct": 25,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_060",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 52314,
+    "credit_score": 574,
+    "credit_utilization_pct": 53,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_061",
+    "community": "Dubai Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 33443,
+    "credit_score": 822,
+    "credit_utilization_pct": 30,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_062",
+    "community": "Dubai Marina",
+    "property_type": "Apartment",
+    "monthly_income_aed": 44738,
+    "credit_score": 778,
+    "credit_utilization_pct": 64,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2550870
+  },
+  {
+    "application_id": "app_063",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 27944,
+    "credit_score": 819,
+    "credit_utilization_pct": 79,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1434927
+  },
+  {
+    "application_id": "app_064",
+    "community": "Downtown Dubai",
+    "property_type": "Villa",
+    "monthly_income_aed": 53599,
+    "credit_score": 829,
+    "credit_utilization_pct": 51,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_065",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 52870,
+    "credit_score": 680,
+    "credit_utilization_pct": 23,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 708494
+  },
+  {
+    "application_id": "app_066",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 13229,
+    "credit_score": 805,
+    "credit_utilization_pct": 23,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2136561
+  },
+  {
+    "application_id": "app_067",
+    "community": "Dubai Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 38763,
+    "credit_score": 734,
+    "credit_utilization_pct": 77,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_068",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 50778,
+    "credit_score": 601,
+    "credit_utilization_pct": 81,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1522511
+  },
+  {
+    "application_id": "app_069",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 52768,
+    "credit_score": 717,
+    "credit_utilization_pct": 85,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_070",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 13745,
+    "credit_score": 764,
+    "credit_utilization_pct": 27,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_071",
+    "community": "Dubai Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 18084,
+    "credit_score": 840,
+    "credit_utilization_pct": 71,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_072",
+    "community": "JBR",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 29584,
+    "credit_score": 801,
+    "credit_utilization_pct": 29,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_073",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 16139,
+    "credit_score": 527,
+    "credit_utilization_pct": 58,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_074",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 34111,
+    "credit_score": 578,
+    "credit_utilization_pct": 68,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 457820
+  },
+  {
+    "application_id": "app_075",
+    "community": "JVC",
+    "property_type": "Villa",
+    "monthly_income_aed": 25951,
+    "credit_score": 599,
+    "credit_utilization_pct": 58,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_076",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 33566,
+    "credit_score": 813,
+    "credit_utilization_pct": 72,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_077",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 11175,
+    "credit_score": 688,
+    "credit_utilization_pct": 42,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1974361
+  },
+  {
+    "application_id": "app_078",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 32660,
+    "credit_score": 667,
+    "credit_utilization_pct": 40,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_079",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 54862,
+    "credit_score": 589,
+    "credit_utilization_pct": 78,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_080",
+    "community": "Dubai Marina",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 49002,
+    "credit_score": 718,
+    "credit_utilization_pct": 67,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1706220
+  },
+  {
+    "application_id": "app_081",
+    "community": "Downtown Dubai",
+    "property_type": "Villa",
+    "monthly_income_aed": 12062,
+    "credit_score": 780,
+    "credit_utilization_pct": 44,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2047501
+  },
+  {
+    "application_id": "app_082",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 17886,
+    "credit_score": 721,
+    "credit_utilization_pct": 45,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_083",
+    "community": "JBR",
+    "property_type": "Villa",
+    "monthly_income_aed": 26295,
+    "credit_score": 525,
+    "credit_utilization_pct": 78,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_084",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 53950,
+    "credit_score": 723,
+    "credit_utilization_pct": 55,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1572621
+  },
+  {
+    "application_id": "app_085",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 36358,
+    "credit_score": 554,
+    "credit_utilization_pct": 29,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_086",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 42864,
+    "credit_score": 730,
+    "credit_utilization_pct": 41,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 378986
+  },
+  {
+    "application_id": "app_087",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 35135,
+    "credit_score": 693,
+    "credit_utilization_pct": 30,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1371548
+  },
+  {
+    "application_id": "app_088",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 12834,
+    "credit_score": 566,
+    "credit_utilization_pct": 66,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 400480
+  },
+  {
+    "application_id": "app_089",
+    "community": "Downtown Dubai",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 13435,
+    "credit_score": 781,
+    "credit_utilization_pct": 16,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 674354
+  },
+  {
+    "application_id": "app_090",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 15938,
+    "credit_score": 742,
+    "credit_utilization_pct": 31,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2505896
+  },
+  {
+    "application_id": "app_091",
+    "community": "MBR City",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 39496,
+    "credit_score": 787,
+    "credit_utilization_pct": 25,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1019404
+  },
+  {
+    "application_id": "app_092",
+    "community": "Dubai Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 21900,
+    "credit_score": 723,
+    "credit_utilization_pct": 55,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1622180
+  },
+  {
+    "application_id": "app_093",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 36717,
+    "credit_score": 822,
+    "credit_utilization_pct": 71,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1843896
+  },
+  {
+    "application_id": "app_094",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 37589,
+    "credit_score": 789,
+    "credit_utilization_pct": 77,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_095",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 38364,
+    "credit_score": 616,
+    "credit_utilization_pct": 40,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_096",
+    "community": "Dubai Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 37293,
+    "credit_score": 747,
+    "credit_utilization_pct": 19,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_097",
+    "community": "Business Bay",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 30312,
+    "credit_score": 553,
+    "credit_utilization_pct": 27,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_098",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 12779,
+    "credit_score": 612,
+    "credit_utilization_pct": 16,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_099",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 14747,
+    "credit_score": 583,
+    "credit_utilization_pct": 58,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_100",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 28662,
+    "credit_score": 707,
+    "credit_utilization_pct": 50,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1818468
+  },
+  {
+    "application_id": "app_101",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 31436,
+    "credit_score": 768,
+    "credit_utilization_pct": 20,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_102",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 26363,
+    "credit_score": 709,
+    "credit_utilization_pct": 82,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 864910
+  },
+  {
+    "application_id": "app_103",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 26702,
+    "credit_score": 616,
+    "credit_utilization_pct": 28,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_104",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 36129,
+    "credit_score": 541,
+    "credit_utilization_pct": 18,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_105",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 32664,
+    "credit_score": 779,
+    "credit_utilization_pct": 34,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_106",
+    "community": "DAMAC Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 40999,
+    "credit_score": 814,
+    "credit_utilization_pct": 44,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 554767
+  },
+  {
+    "application_id": "app_107",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 20246,
+    "credit_score": 748,
+    "credit_utilization_pct": 23,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2387302
+  },
+  {
+    "application_id": "app_108",
+    "community": "JBR",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 22154,
+    "credit_score": 712,
+    "credit_utilization_pct": 61,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2340498
+  },
+  {
+    "application_id": "app_109",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 33790,
+    "credit_score": 609,
+    "credit_utilization_pct": 36,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_110",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 40083,
+    "credit_score": 598,
+    "credit_utilization_pct": 58,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 749994
+  },
+  {
+    "application_id": "app_111",
+    "community": "MBR City",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 38986,
+    "credit_score": 576,
+    "credit_utilization_pct": 31,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2319354
+  },
+  {
+    "application_id": "app_112",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 26638,
+    "credit_score": 671,
+    "credit_utilization_pct": 38,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_113",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 27210,
+    "credit_score": 712,
+    "credit_utilization_pct": 72,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2725350
+  },
+  {
+    "application_id": "app_114",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 38209,
+    "credit_score": 596,
+    "credit_utilization_pct": 25,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1130688
+  },
+  {
+    "application_id": "app_115",
+    "community": "Downtown Dubai",
+    "property_type": "Apartment",
+    "monthly_income_aed": 51489,
+    "credit_score": 529,
+    "credit_utilization_pct": 15,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_116",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 39419,
+    "credit_score": 721,
+    "credit_utilization_pct": 62,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_117",
+    "community": "Dubai Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 23142,
+    "credit_score": 559,
+    "credit_utilization_pct": 49,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_118",
+    "community": "MBR City",
+    "property_type": "Villa",
+    "monthly_income_aed": 20241,
+    "credit_score": 670,
+    "credit_utilization_pct": 40,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2440937
+  },
+  {
+    "application_id": "app_119",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 16174,
+    "credit_score": 719,
+    "credit_utilization_pct": 82,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_120",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 26830,
+    "credit_score": 719,
+    "credit_utilization_pct": 64,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_121",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 25776,
+    "credit_score": 734,
+    "credit_utilization_pct": 16,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2302383
+  },
+  {
+    "application_id": "app_122",
+    "community": "Business Bay",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 18111,
+    "credit_score": 681,
+    "credit_utilization_pct": 73,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2647490
+  },
+  {
+    "application_id": "app_123",
+    "community": "MBR City",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 20119,
+    "credit_score": 627,
+    "credit_utilization_pct": 54,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1999480
+  },
+  {
+    "application_id": "app_124",
+    "community": "Downtown Dubai",
+    "property_type": "Apartment",
+    "monthly_income_aed": 10057,
+    "credit_score": 540,
+    "credit_utilization_pct": 59,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 470517
+  },
+  {
+    "application_id": "app_125",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 25995,
+    "credit_score": 701,
+    "credit_utilization_pct": 20,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_126",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 36401,
+    "credit_score": 834,
+    "credit_utilization_pct": 71,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 710653
+  },
+  {
+    "application_id": "app_127",
+    "community": "JVC",
+    "property_type": "Villa",
+    "monthly_income_aed": 36693,
+    "credit_score": 724,
+    "credit_utilization_pct": 61,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2426165
+  },
+  {
+    "application_id": "app_128",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 12836,
+    "credit_score": 794,
+    "credit_utilization_pct": 40,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_129",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 41428,
+    "credit_score": 789,
+    "credit_utilization_pct": 78,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1805173
+  },
+  {
+    "application_id": "app_130",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 37417,
+    "credit_score": 659,
+    "credit_utilization_pct": 78,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_131",
+    "community": "Dubai Marina",
+    "property_type": "Apartment",
+    "monthly_income_aed": 50227,
+    "credit_score": 618,
+    "credit_utilization_pct": 68,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_132",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 45045,
+    "credit_score": 585,
+    "credit_utilization_pct": 72,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_133",
+    "community": "Business Bay",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 23596,
+    "credit_score": 712,
+    "credit_utilization_pct": 37,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 727556
+  },
+  {
+    "application_id": "app_134",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 26096,
+    "credit_score": 573,
+    "credit_utilization_pct": 75,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1330927
+  },
+  {
+    "application_id": "app_135",
+    "community": "DAMAC Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 9783,
+    "credit_score": 716,
+    "credit_utilization_pct": 78,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1496738
+  },
+  {
+    "application_id": "app_136",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 13082,
+    "credit_score": 671,
+    "credit_utilization_pct": 20,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_137",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 46244,
+    "credit_score": 803,
+    "credit_utilization_pct": 45,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2377080
+  },
+  {
+    "application_id": "app_138",
+    "community": "DAMAC Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 46784,
+    "credit_score": 797,
+    "credit_utilization_pct": 43,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1088913
+  },
+  {
+    "application_id": "app_139",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 53337,
+    "credit_score": 662,
+    "credit_utilization_pct": 85,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1524505
+  },
+  {
+    "application_id": "app_140",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 49608,
+    "credit_score": 526,
+    "credit_utilization_pct": 18,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_141",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 34921,
+    "credit_score": 561,
+    "credit_utilization_pct": 85,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2807497
+  },
+  {
+    "application_id": "app_142",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 31169,
+    "credit_score": 693,
+    "credit_utilization_pct": 61,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1636557
+  },
+  {
+    "application_id": "app_143",
+    "community": "Dubai Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 41747,
+    "credit_score": 542,
+    "credit_utilization_pct": 61,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2213955
+  },
+  {
+    "application_id": "app_144",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 35588,
+    "credit_score": 563,
+    "credit_utilization_pct": 38,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1506069
+  },
+  {
+    "application_id": "app_145",
+    "community": "Dubai Marina",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 52578,
+    "credit_score": 631,
+    "credit_utilization_pct": 27,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1408655
+  },
+  {
+    "application_id": "app_146",
+    "community": "Downtown Dubai",
+    "property_type": "Villa",
+    "monthly_income_aed": 10049,
+    "credit_score": 728,
+    "credit_utilization_pct": 17,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_147",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 45603,
+    "credit_score": 594,
+    "credit_utilization_pct": 80,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_148",
+    "community": "Business Bay",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 9901,
+    "credit_score": 569,
+    "credit_utilization_pct": 21,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_149",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 39710,
+    "credit_score": 617,
+    "credit_utilization_pct": 25,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_150",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 25681,
+    "credit_score": 766,
+    "credit_utilization_pct": 45,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2209069
+  },
+  {
+    "application_id": "app_151",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 18239,
+    "credit_score": 540,
+    "credit_utilization_pct": 62,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_152",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 46512,
+    "credit_score": 711,
+    "credit_utilization_pct": 39,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_153",
+    "community": "Downtown Dubai",
+    "property_type": "Villa",
+    "monthly_income_aed": 44182,
+    "credit_score": 553,
+    "credit_utilization_pct": 70,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_154",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 54712,
+    "credit_score": 578,
+    "credit_utilization_pct": 38,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_155",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 25766,
+    "credit_score": 733,
+    "credit_utilization_pct": 59,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2102806
+  },
+  {
+    "application_id": "app_156",
+    "community": "JVC",
+    "property_type": "Villa",
+    "monthly_income_aed": 41081,
+    "credit_score": 724,
+    "credit_utilization_pct": 56,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_157",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 52430,
+    "credit_score": 668,
+    "credit_utilization_pct": 50,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 348977
+  },
+  {
+    "application_id": "app_158",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 45449,
+    "credit_score": 658,
+    "credit_utilization_pct": 74,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_159",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 29210,
+    "credit_score": 717,
+    "credit_utilization_pct": 72,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_160",
+    "community": "Business Bay",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 18528,
+    "credit_score": 649,
+    "credit_utilization_pct": 62,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2437231
+  },
+  {
+    "application_id": "app_161",
+    "community": "Business Bay",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 40708,
+    "credit_score": 761,
+    "credit_utilization_pct": 22,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1380871
+  },
+  {
+    "application_id": "app_162",
+    "community": "Downtown Dubai",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 42972,
+    "credit_score": 775,
+    "credit_utilization_pct": 55,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2608093
+  },
+  {
+    "application_id": "app_163",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 16471,
+    "credit_score": 615,
+    "credit_utilization_pct": 81,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_164",
+    "community": "Dubai Marina",
+    "property_type": "Apartment",
+    "monthly_income_aed": 35678,
+    "credit_score": 635,
+    "credit_utilization_pct": 41,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2532944
+  },
+  {
+    "application_id": "app_165",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 50984,
+    "credit_score": 714,
+    "credit_utilization_pct": 82,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_166",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 20498,
+    "credit_score": 713,
+    "credit_utilization_pct": 67,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_167",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 32842,
+    "credit_score": 743,
+    "credit_utilization_pct": 20,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_168",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 50588,
+    "credit_score": 534,
+    "credit_utilization_pct": 42,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 984834
+  },
+  {
+    "application_id": "app_169",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 48384,
+    "credit_score": 689,
+    "credit_utilization_pct": 62,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_170",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 37470,
+    "credit_score": 530,
+    "credit_utilization_pct": 60,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1656744
+  },
+  {
+    "application_id": "app_171",
+    "community": "Business Bay",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 42777,
     "credit_score": 720,
-    "annual_income": 95000,
-    "employment_status": "Employed",
-    "requested_credit_limit": 150000,
-    "existing_mortgage_balance": 220000,
-    "property_value": 450000,
-    "created_at": "2025-01-01T00:00:00Z",
-    "status": "pending"
+    "credit_utilization_pct": 17,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1347953
+  },
+  {
+    "application_id": "app_172",
+    "community": "JVC",
+    "property_type": "Villa",
+    "monthly_income_aed": 13643,
+    "credit_score": 547,
+    "credit_utilization_pct": 26,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_173",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 44162,
+    "credit_score": 835,
+    "credit_utilization_pct": 83,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1270887
+  },
+  {
+    "application_id": "app_174",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 29833,
+    "credit_score": 810,
+    "credit_utilization_pct": 53,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1613619
+  },
+  {
+    "application_id": "app_175",
+    "community": "MBR City",
+    "property_type": "Villa",
+    "monthly_income_aed": 44849,
+    "credit_score": 631,
+    "credit_utilization_pct": 51,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2245501
+  },
+  {
+    "application_id": "app_176",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 29693,
+    "credit_score": 602,
+    "credit_utilization_pct": 23,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1593780
+  },
+  {
+    "application_id": "app_177",
+    "community": "JBR",
+    "property_type": "Villa",
+    "monthly_income_aed": 54249,
+    "credit_score": 822,
+    "credit_utilization_pct": 55,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_178",
+    "community": "JBR",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 25986,
+    "credit_score": 590,
+    "credit_utilization_pct": 27,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_179",
+    "community": "Downtown Dubai",
+    "property_type": "Villa",
+    "monthly_income_aed": 20136,
+    "credit_score": 566,
+    "credit_utilization_pct": 34,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_180",
+    "community": "DAMAC Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 39907,
+    "credit_score": 571,
+    "credit_utilization_pct": 23,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_181",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 14879,
+    "credit_score": 728,
+    "credit_utilization_pct": 76,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_182",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 53897,
+    "credit_score": 689,
+    "credit_utilization_pct": 22,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_183",
+    "community": "Business Bay",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 9997,
+    "credit_score": 740,
+    "credit_utilization_pct": 20,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_184",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 52572,
+    "credit_score": 614,
+    "credit_utilization_pct": 21,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_185",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 38873,
+    "credit_score": 666,
+    "credit_utilization_pct": 33,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_186",
+    "community": "Dubai Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 25194,
+    "credit_score": 661,
+    "credit_utilization_pct": 39,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2026970
+  },
+  {
+    "application_id": "app_187",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 49413,
+    "credit_score": 545,
+    "credit_utilization_pct": 60,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 570576
+  },
+  {
+    "application_id": "app_188",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 11855,
+    "credit_score": 736,
+    "credit_utilization_pct": 31,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_189",
+    "community": "Downtown Dubai",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 17592,
+    "credit_score": 523,
+    "credit_utilization_pct": 80,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_190",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 50714,
+    "credit_score": 672,
+    "credit_utilization_pct": 33,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 407915
+  },
+  {
+    "application_id": "app_191",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 39117,
+    "credit_score": 729,
+    "credit_utilization_pct": 18,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2590519
+  },
+  {
+    "application_id": "app_192",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 27393,
+    "credit_score": 725,
+    "credit_utilization_pct": 70,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_193",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 41649,
+    "credit_score": 729,
+    "credit_utilization_pct": 40,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_194",
+    "community": "Downtown Dubai",
+    "property_type": "Villa",
+    "monthly_income_aed": 9635,
+    "credit_score": 812,
+    "credit_utilization_pct": 19,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_195",
+    "community": "Downtown Dubai",
+    "property_type": "Villa",
+    "monthly_income_aed": 48254,
+    "credit_score": 818,
+    "credit_utilization_pct": 23,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1037040
+  },
+  {
+    "application_id": "app_196",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 50597,
+    "credit_score": 708,
+    "credit_utilization_pct": 66,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2484005
+  },
+  {
+    "application_id": "app_197",
+    "community": "JBR",
+    "property_type": "Villa",
+    "monthly_income_aed": 48361,
+    "credit_score": 632,
+    "credit_utilization_pct": 62,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2261701
+  },
+  {
+    "application_id": "app_198",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 14667,
+    "credit_score": 694,
+    "credit_utilization_pct": 59,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_199",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 23809,
+    "credit_score": 606,
+    "credit_utilization_pct": 51,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2532536
+  },
+  {
+    "application_id": "app_200",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 29893,
+    "credit_score": 706,
+    "credit_utilization_pct": 74,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2517223
+  },
+  {
+    "application_id": "app_201",
+    "community": "Downtown Dubai",
+    "property_type": "Villa",
+    "monthly_income_aed": 36120,
+    "credit_score": 676,
+    "credit_utilization_pct": 62,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_202",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 37083,
+    "credit_score": 567,
+    "credit_utilization_pct": 81,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2047395
+  },
+  {
+    "application_id": "app_203",
+    "community": "Downtown Dubai",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 12133,
+    "credit_score": 817,
+    "credit_utilization_pct": 53,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1558632
+  },
+  {
+    "application_id": "app_204",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 20854,
+    "credit_score": 634,
+    "credit_utilization_pct": 73,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_205",
+    "community": "Downtown Dubai",
+    "property_type": "Apartment",
+    "monthly_income_aed": 33544,
+    "credit_score": 585,
+    "credit_utilization_pct": 29,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2916926
+  },
+  {
+    "application_id": "app_206",
+    "community": "JVC",
+    "property_type": "Villa",
+    "monthly_income_aed": 43112,
+    "credit_score": 668,
+    "credit_utilization_pct": 56,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_207",
+    "community": "Dubai Marina",
+    "property_type": "Apartment",
+    "monthly_income_aed": 14839,
+    "credit_score": 721,
+    "credit_utilization_pct": 15,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1074279
+  },
+  {
+    "application_id": "app_208",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 21277,
+    "credit_score": 792,
+    "credit_utilization_pct": 59,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_209",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 40567,
+    "credit_score": 744,
+    "credit_utilization_pct": 46,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2649252
+  },
+  {
+    "application_id": "app_210",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 27832,
+    "credit_score": 777,
+    "credit_utilization_pct": 45,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_211",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 54576,
+    "credit_score": 597,
+    "credit_utilization_pct": 47,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1614632
+  },
+  {
+    "application_id": "app_212",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 13161,
+    "credit_score": 729,
+    "credit_utilization_pct": 42,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_213",
+    "community": "JBR",
+    "property_type": "Villa",
+    "monthly_income_aed": 47500,
+    "credit_score": 765,
+    "credit_utilization_pct": 73,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_214",
+    "community": "DAMAC Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 11403,
+    "credit_score": 637,
+    "credit_utilization_pct": 48,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2634907
+  },
+  {
+    "application_id": "app_215",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 23127,
+    "credit_score": 750,
+    "credit_utilization_pct": 51,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_216",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 13890,
+    "credit_score": 764,
+    "credit_utilization_pct": 35,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_217",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 22319,
+    "credit_score": 784,
+    "credit_utilization_pct": 24,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 832672
+  },
+  {
+    "application_id": "app_218",
+    "community": "DAMAC Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 23176,
+    "credit_score": 561,
+    "credit_utilization_pct": 67,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 846057
+  },
+  {
+    "application_id": "app_219",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 49262,
+    "credit_score": 750,
+    "credit_utilization_pct": 21,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_220",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 40040,
+    "credit_score": 558,
+    "credit_utilization_pct": 58,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2852677
+  },
+  {
+    "application_id": "app_221",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 23162,
+    "credit_score": 830,
+    "credit_utilization_pct": 22,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_222",
+    "community": "Dubai Marina",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 43667,
+    "credit_score": 762,
+    "credit_utilization_pct": 51,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_223",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 10670,
+    "credit_score": 650,
+    "credit_utilization_pct": 68,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_224",
+    "community": "DAMAC Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 15505,
+    "credit_score": 728,
+    "credit_utilization_pct": 43,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_225",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 32284,
+    "credit_score": 606,
+    "credit_utilization_pct": 32,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_226",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 10638,
+    "credit_score": 636,
+    "credit_utilization_pct": 84,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_227",
+    "community": "Dubai Marina",
+    "property_type": "Apartment",
+    "monthly_income_aed": 42523,
+    "credit_score": 614,
+    "credit_utilization_pct": 23,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_228",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 30545,
+    "credit_score": 566,
+    "credit_utilization_pct": 38,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2753420
+  },
+  {
+    "application_id": "app_229",
+    "community": "JBR",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 17601,
+    "credit_score": 686,
+    "credit_utilization_pct": 77,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_230",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 36573,
+    "credit_score": 808,
+    "credit_utilization_pct": 39,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_231",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 27447,
+    "credit_score": 737,
+    "credit_utilization_pct": 59,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 331015
+  },
+  {
+    "application_id": "app_232",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 29560,
+    "credit_score": 541,
+    "credit_utilization_pct": 43,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_233",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 33527,
+    "credit_score": 744,
+    "credit_utilization_pct": 24,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_234",
+    "community": "Dubai Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 14683,
+    "credit_score": 625,
+    "credit_utilization_pct": 67,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_235",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 45924,
+    "credit_score": 652,
+    "credit_utilization_pct": 16,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1335796
+  },
+  {
+    "application_id": "app_236",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 16938,
+    "credit_score": 652,
+    "credit_utilization_pct": 41,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_237",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 13163,
+    "credit_score": 683,
+    "credit_utilization_pct": 68,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1018101
+  },
+  {
+    "application_id": "app_238",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 34023,
+    "credit_score": 658,
+    "credit_utilization_pct": 82,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_239",
+    "community": "JBR",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 20075,
+    "credit_score": 659,
+    "credit_utilization_pct": 59,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_240",
+    "community": "DAMAC Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 34819,
+    "credit_score": 698,
+    "credit_utilization_pct": 40,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2476538
+  },
+  {
+    "application_id": "app_241",
+    "community": "Dubai Marina",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 35251,
+    "credit_score": 669,
+    "credit_utilization_pct": 47,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_242",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 52188,
+    "credit_score": 537,
+    "credit_utilization_pct": 21,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1954047
+  },
+  {
+    "application_id": "app_243",
+    "community": "Downtown Dubai",
+    "property_type": "Apartment",
+    "monthly_income_aed": 18439,
+    "credit_score": 813,
+    "credit_utilization_pct": 62,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_244",
+    "community": "MBR City",
+    "property_type": "Villa",
+    "monthly_income_aed": 12113,
+    "credit_score": 533,
+    "credit_utilization_pct": 24,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 820386
+  },
+  {
+    "application_id": "app_245",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 53832,
+    "credit_score": 792,
+    "credit_utilization_pct": 56,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1842551
+  },
+  {
+    "application_id": "app_246",
+    "community": "MBR City",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 33027,
+    "credit_score": 618,
+    "credit_utilization_pct": 20,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_247",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 10607,
+    "credit_score": 730,
+    "credit_utilization_pct": 39,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2839518
+  },
+  {
+    "application_id": "app_248",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 14573,
+    "credit_score": 660,
+    "credit_utilization_pct": 25,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1665394
+  },
+  {
+    "application_id": "app_249",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 54089,
+    "credit_score": 694,
+    "credit_utilization_pct": 26,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1379484
+  },
+  {
+    "application_id": "app_250",
+    "community": "JBR",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 38421,
+    "credit_score": 566,
+    "credit_utilization_pct": 41,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_251",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 49398,
+    "credit_score": 724,
+    "credit_utilization_pct": 61,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1059499
+  },
+  {
+    "application_id": "app_252",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 25211,
+    "credit_score": 525,
+    "credit_utilization_pct": 22,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_253",
+    "community": "Dubai Marina",
+    "property_type": "Apartment",
+    "monthly_income_aed": 16937,
+    "credit_score": 784,
+    "credit_utilization_pct": 79,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_254",
+    "community": "Dubai Marina",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 25625,
+    "credit_score": 821,
+    "credit_utilization_pct": 46,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_255",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 45349,
+    "credit_score": 716,
+    "credit_utilization_pct": 66,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_256",
+    "community": "Downtown Dubai",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 17690,
+    "credit_score": 773,
+    "credit_utilization_pct": 79,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1274502
+  },
+  {
+    "application_id": "app_257",
+    "community": "Downtown Dubai",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 10299,
+    "credit_score": 716,
+    "credit_utilization_pct": 72,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_258",
+    "community": "JBR",
+    "property_type": "Villa",
+    "monthly_income_aed": 24080,
+    "credit_score": 727,
+    "credit_utilization_pct": 47,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_259",
+    "community": "Dubai Marina",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 27745,
+    "credit_score": 586,
+    "credit_utilization_pct": 56,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_260",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 29689,
+    "credit_score": 816,
+    "credit_utilization_pct": 20,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_261",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 39445,
+    "credit_score": 643,
+    "credit_utilization_pct": 60,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2840718
+  },
+  {
+    "application_id": "app_262",
+    "community": "JBR",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 40462,
+    "credit_score": 739,
+    "credit_utilization_pct": 84,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1516084
+  },
+  {
+    "application_id": "app_263",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 27221,
+    "credit_score": 785,
+    "credit_utilization_pct": 19,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2557928
+  },
+  {
+    "application_id": "app_264",
+    "community": "JBR",
+    "property_type": "Apartment",
+    "monthly_income_aed": 24324,
+    "credit_score": 784,
+    "credit_utilization_pct": 34,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_265",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 51186,
+    "credit_score": 631,
+    "credit_utilization_pct": 22,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_266",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 50525,
+    "credit_score": 776,
+    "credit_utilization_pct": 72,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_267",
+    "community": "Dubai Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 11601,
+    "credit_score": 762,
+    "credit_utilization_pct": 31,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2891344
+  },
+  {
+    "application_id": "app_268",
+    "community": "Dubai Hills",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 24302,
+    "credit_score": 605,
+    "credit_utilization_pct": 45,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_269",
+    "community": "JVC",
+    "property_type": "Villa",
+    "monthly_income_aed": 40967,
+    "credit_score": 699,
+    "credit_utilization_pct": 40,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_270",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 33158,
+    "credit_score": 646,
+    "credit_utilization_pct": 28,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_271",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 40943,
+    "credit_score": 546,
+    "credit_utilization_pct": 41,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2238209
+  },
+  {
+    "application_id": "app_272",
+    "community": "Arabian Ranches",
+    "property_type": "Apartment",
+    "monthly_income_aed": 40154,
+    "credit_score": 647,
+    "credit_utilization_pct": 46,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_273",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 19665,
+    "credit_score": 823,
+    "credit_utilization_pct": 17,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_274",
+    "community": "JBR",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 44183,
+    "credit_score": 522,
+    "credit_utilization_pct": 43,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_275",
+    "community": "Dubai Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 14698,
+    "credit_score": 808,
+    "credit_utilization_pct": 85,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2730942
+  },
+  {
+    "application_id": "app_276",
+    "community": "JVC",
+    "property_type": "Apartment",
+    "monthly_income_aed": 45778,
+    "credit_score": 664,
+    "credit_utilization_pct": 44,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 401413
+  },
+  {
+    "application_id": "app_277",
+    "community": "Dubai Marina",
+    "property_type": "Villa",
+    "monthly_income_aed": 9551,
+    "credit_score": 606,
+    "credit_utilization_pct": 74,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 317130
+  },
+  {
+    "application_id": "app_278",
+    "community": "JVC",
+    "property_type": "Villa",
+    "monthly_income_aed": 37033,
+    "credit_score": 569,
+    "credit_utilization_pct": 66,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2314191
+  },
+  {
+    "application_id": "app_279",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 26203,
+    "credit_score": 650,
+    "credit_utilization_pct": 45,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_280",
+    "community": "JVC",
+    "property_type": "Villa",
+    "monthly_income_aed": 15034,
+    "credit_score": 736,
+    "credit_utilization_pct": 66,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 579934
+  },
+  {
+    "application_id": "app_281",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 39728,
+    "credit_score": 722,
+    "credit_utilization_pct": 76,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2508521
+  },
+  {
+    "application_id": "app_282",
+    "community": "JBR",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 26737,
+    "credit_score": 646,
+    "credit_utilization_pct": 19,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_283",
+    "community": "DAMAC Hills",
+    "property_type": "Villa",
+    "monthly_income_aed": 21113,
+    "credit_score": 799,
+    "credit_utilization_pct": 19,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_284",
+    "community": "MBR City",
+    "property_type": "Villa",
+    "monthly_income_aed": 54353,
+    "credit_score": 602,
+    "credit_utilization_pct": 47,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_285",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 45728,
+    "credit_score": 799,
+    "credit_utilization_pct": 34,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_286",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 16476,
+    "credit_score": 688,
+    "credit_utilization_pct": 42,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_287",
+    "community": "Palm Jumeirah",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 28138,
+    "credit_score": 745,
+    "credit_utilization_pct": 63,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_288",
+    "community": "Palm Jumeirah",
+    "property_type": "Apartment",
+    "monthly_income_aed": 34932,
+    "credit_score": 524,
+    "credit_utilization_pct": 68,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1794439
+  },
+  {
+    "application_id": "app_289",
+    "community": "DAMAC Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 11586,
+    "credit_score": 590,
+    "credit_utilization_pct": 34,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2733492
+  },
+  {
+    "application_id": "app_290",
+    "community": "MBR City",
+    "property_type": "Apartment",
+    "monthly_income_aed": 11263,
+    "credit_score": 837,
+    "credit_utilization_pct": 75,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 500078
+  },
+  {
+    "application_id": "app_291",
+    "community": "JVC",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 51401,
+    "credit_score": 586,
+    "credit_utilization_pct": 54,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1305958
+  },
+  {
+    "application_id": "app_292",
+    "community": "Arabian Ranches",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 48628,
+    "credit_score": 692,
+    "credit_utilization_pct": 41,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_293",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 9548,
+    "credit_score": 628,
+    "credit_utilization_pct": 16,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1900112
+  },
+  {
+    "application_id": "app_294",
+    "community": "Business Bay",
+    "property_type": "Apartment",
+    "monthly_income_aed": 28381,
+    "credit_score": 668,
+    "credit_utilization_pct": 46,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_295",
+    "community": "Business Bay",
+    "property_type": "Villa",
+    "monthly_income_aed": 48665,
+    "credit_score": 701,
+    "credit_utilization_pct": 76,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 1392149
+  },
+  {
+    "application_id": "app_296",
+    "community": "Dubai Hills",
+    "property_type": "Apartment",
+    "monthly_income_aed": 36884,
+    "credit_score": 564,
+    "credit_utilization_pct": 50,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_297",
+    "community": "Downtown Dubai",
+    "property_type": "Apartment",
+    "monthly_income_aed": 11607,
+    "credit_score": 750,
+    "credit_utilization_pct": 17,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2485867
+  },
+  {
+    "application_id": "app_298",
+    "community": "Arabian Ranches",
+    "property_type": "Villa",
+    "monthly_income_aed": 14289,
+    "credit_score": 558,
+    "credit_utilization_pct": 48,
+    "existing_mortgage": false,
+    "existing_mortgage_balance_aed": null
+  },
+  {
+    "application_id": "app_299",
+    "community": "Business Bay",
+    "property_type": "Townhouse",
+    "monthly_income_aed": 48686,
+    "credit_score": 699,
+    "credit_utilization_pct": 46,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 2720563
+  },
+  {
+    "application_id": "app_300",
+    "community": "Palm Jumeirah",
+    "property_type": "Villa",
+    "monthly_income_aed": 11088,
+    "credit_score": 563,
+    "credit_utilization_pct": 79,
+    "existing_mortgage": true,
+    "existing_mortgage_balance_aed": 407165
   }
 ]
