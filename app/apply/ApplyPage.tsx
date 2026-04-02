@@ -91,6 +91,7 @@ export default function ApplyPage() {
   //UI for the application form. It includes fields for full name, email, Emirates ID, phone, community, property type, and size in sqft. There's also a submit button that triggers the handleSubmit function when clicked. If there's an error, it displays the error message below the button.
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6">
+    {/* <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 flex items-center justify-center"> */}
       <div className="w-full max-w-xl bg-white p-6 rounded-2xl border shadow-sm">
         <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
           Apply for Equity Access

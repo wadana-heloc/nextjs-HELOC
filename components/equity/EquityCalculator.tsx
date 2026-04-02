@@ -90,6 +90,7 @@ export function EquityCalculator() {
 
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6">
+    {/* <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 flex items-center justify-center"> */}
       <div className="w-full max-w-xl rounded-2xl bg-white p-6 shadow-sm border border-slate-200">
         <header className="mb-6">
           <h1 className="text-2xl font-semibold tracking-tight text-slate-900">

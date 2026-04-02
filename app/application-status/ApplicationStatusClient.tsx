@@ -59,6 +59,7 @@ export default function ApplicationStatusClient() {
 
   if (error) {
     return (
+
       <div className="min-h-screen flex items-center justify-center">
         <div className="bg-red-50 border border-red-200 p-6 rounded-xl text-center">
           <p className="text-red-600">{error}</p>
@@ -76,6 +77,7 @@ export default function ApplicationStatusClient() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50 p-6">
+        {/* <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 flex items-center justify-center"> */}
       <div className="w-full max-w-md bg-white border p-6 rounded-2xl shadow-sm text-center space-y-4">
         <h1 className="text-2xl font-semibold text-slate-900">
           Application Status
