@@ -5,7 +5,7 @@
     "credit_score": 708,
     "credit_utilization_pct": 16,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_002",
@@ -13,7 +13,7 @@
     "credit_score": 581,
     "credit_utilization_pct": 49,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 307141
+    "monthly_mortgage_payment_aed": 307141
   },
   {
     "application_id": "app_003",
@@ -21,7 +21,7 @@
     "credit_score": 590,
     "credit_utilization_pct": 84,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 486177
+    "monthly_mortgage_payment_aed": 486177
   },
   {
     "application_id": "app_004",
@@ -29,7 +29,7 @@
     "credit_score": 769,
     "credit_utilization_pct": 58,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2403513
+    "monthly_mortgage_payment_aed": 2403513
   },
   {
     "application_id": "app_005",
@@ -37,7 +37,7 @@
     "credit_score": 606,
     "credit_utilization_pct": 79,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 935392
+    "monthly_mortgage_payment_aed": 935392
   },
   {
     "application_id": "app_006",
@@ -45,7 +45,7 @@
     "credit_score": 810,
     "credit_utilization_pct": 38,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_007",
@@ -53,7 +53,7 @@
     "credit_score": 770,
     "credit_utilization_pct": 23,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_008",
@@ -61,7 +61,7 @@
     "credit_score": 717,
     "credit_utilization_pct": 78,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_009",
@@ -69,7 +69,7 @@
     "credit_score": 540,
     "credit_utilization_pct": 38,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_010",
@@ -77,7 +77,7 @@
     "credit_score": 524,
     "credit_utilization_pct": 65,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_011",
@@ -85,7 +85,7 @@
     "credit_score": 568,
     "credit_utilization_pct": 18,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2252129
+    "monthly_mortgage_payment_aed": 2252129
   },
   {
     "application_id": "app_012",
@@ -93,7 +93,7 @@
     "credit_score": 542,
     "credit_utilization_pct": 57,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_013",
@@ -101,7 +101,7 @@
     "credit_score": 787,
     "credit_utilization_pct": 53,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2717945
+    "monthly_mortgage_payment_aed": 2717945
   },
   {
     "application_id": "app_014",
@@ -109,7 +109,7 @@
     "credit_score": 541,
     "credit_utilization_pct": 65,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2993969
+    "monthly_mortgage_payment_aed": 2993969
   },
   {
     "application_id": "app_015",
@@ -117,7 +117,7 @@
     "credit_score": 824,
     "credit_utilization_pct": 24,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2500762
+    "monthly_mortgage_payment_aed": 2500762
   },
   {
     "application_id": "app_016",
@@ -125,7 +125,7 @@
     "credit_score": 592,
     "credit_utilization_pct": 77,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_017",
@@ -133,7 +133,7 @@
     "credit_score": 675,
     "credit_utilization_pct": 21,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_018",
@@ -141,7 +141,7 @@
     "credit_score": 736,
     "credit_utilization_pct": 70,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1115218
+    "monthly_mortgage_payment_aed": 1115218
   },
   {
     "application_id": "app_019",
@@ -149,7 +149,7 @@
     "credit_score": 592,
     "credit_utilization_pct": 85,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1575290
+    "monthly_mortgage_payment_aed": 1575290
   },
   {
     "application_id": "app_020",
@@ -157,7 +157,7 @@
     "credit_score": 658,
     "credit_utilization_pct": 44,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_021",
@@ -165,7 +165,7 @@
     "credit_score": 646,
     "credit_utilization_pct": 47,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2343786
+    "monthly_mortgage_payment_aed": 2343786
   },
   {
     "application_id": "app_022",
@@ -173,7 +173,7 @@
     "credit_score": 627,
     "credit_utilization_pct": 70,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_023",
@@ -181,7 +181,7 @@
     "credit_score": 650,
     "credit_utilization_pct": 21,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 880987
+    "monthly_mortgage_payment_aed": 880987
   },
   {
     "application_id": "app_024",
@@ -189,7 +189,7 @@
     "credit_score": 757,
     "credit_utilization_pct": 29,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 438660
+    "monthly_mortgage_payment_aed": 438660
   },
   {
     "application_id": "app_025",
@@ -197,7 +197,7 @@
     "credit_score": 816,
     "credit_utilization_pct": 43,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_026",
@@ -205,7 +205,7 @@
     "credit_score": 819,
     "credit_utilization_pct": 75,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_027",
@@ -213,7 +213,7 @@
     "credit_score": 728,
     "credit_utilization_pct": 20,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 916187
+    "monthly_mortgage_payment_aed": 916187
   },
   {
     "application_id": "app_028",
@@ -221,7 +221,7 @@
     "credit_score": 714,
     "credit_utilization_pct": 21,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_029",
@@ -229,7 +229,7 @@
     "credit_score": 835,
     "credit_utilization_pct": 71,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2713242
+    "monthly_mortgage_payment_aed": 2713242
   },
   {
     "application_id": "app_030",
@@ -237,7 +237,7 @@
     "credit_score": 827,
     "credit_utilization_pct": 30,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1410765
+    "monthly_mortgage_payment_aed": 1410765
   },
   {
     "application_id": "app_031",
@@ -245,7 +245,7 @@
     "credit_score": 589,
     "credit_utilization_pct": 75,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2186163
+    "monthly_mortgage_payment_aed": 2186163
   },
   {
     "application_id": "app_032",
@@ -253,7 +253,7 @@
     "credit_score": 694,
     "credit_utilization_pct": 47,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 353421
+    "monthly_mortgage_payment_aed": 353421
   },
   {
     "application_id": "app_033",
@@ -261,7 +261,7 @@
     "credit_score": 604,
     "credit_utilization_pct": 28,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2903756
+    "monthly_mortgage_payment_aed": 2903756
   },
   {
     "application_id": "app_034",
@@ -269,7 +269,7 @@
     "credit_score": 572,
     "credit_utilization_pct": 27,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2069579
+    "monthly_mortgage_payment_aed": 2069579
   },
   {
     "application_id": "app_035",
@@ -277,7 +277,7 @@
     "credit_score": 710,
     "credit_utilization_pct": 53,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_036",
@@ -285,7 +285,7 @@
     "credit_score": 823,
     "credit_utilization_pct": 75,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2995589
+    "monthly_mortgage_payment_aed": 2995589
   },
   {
     "application_id": "app_037",
@@ -293,7 +293,7 @@
     "credit_score": 681,
     "credit_utilization_pct": 76,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2248046
+    "monthly_mortgage_payment_aed": 2248046
   },
   {
     "application_id": "app_038",
@@ -301,7 +301,7 @@
     "credit_score": 538,
     "credit_utilization_pct": 75,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_039",
@@ -309,7 +309,7 @@
     "credit_score": 687,
     "credit_utilization_pct": 36,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2169275
+    "monthly_mortgage_payment_aed": 2169275
   },
   {
     "application_id": "app_040",
@@ -317,7 +317,7 @@
     "credit_score": 568,
     "credit_utilization_pct": 79,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 786167
+    "monthly_mortgage_payment_aed": 786167
   },
   {
     "application_id": "app_041",
@@ -325,7 +325,7 @@
     "credit_score": 825,
     "credit_utilization_pct": 78,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_042",
@@ -333,7 +333,7 @@
     "credit_score": 805,
     "credit_utilization_pct": 64,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2946903
+    "monthly_mortgage_payment_aed": 2946903
   },
   {
     "application_id": "app_043",
@@ -341,7 +341,7 @@
     "credit_score": 816,
     "credit_utilization_pct": 25,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1870313
+    "monthly_mortgage_payment_aed": 1870313
   },
   {
     "application_id": "app_044",
@@ -349,7 +349,7 @@
     "credit_score": 725,
     "credit_utilization_pct": 52,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_045",
@@ -357,7 +357,7 @@
     "credit_score": 773,
     "credit_utilization_pct": 74,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 601329
+    "monthly_mortgage_payment_aed": 601329
   },
   {
     "application_id": "app_046",
@@ -365,7 +365,7 @@
     "credit_score": 582,
     "credit_utilization_pct": 30,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 423236
+    "monthly_mortgage_payment_aed": 423236
   },
   {
     "application_id": "app_047",
@@ -373,7 +373,7 @@
     "credit_score": 611,
     "credit_utilization_pct": 28,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_048",
@@ -381,7 +381,7 @@
     "credit_score": 721,
     "credit_utilization_pct": 15,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_049",
@@ -389,7 +389,7 @@
     "credit_score": 804,
     "credit_utilization_pct": 84,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1031241
+    "monthly_mortgage_payment_aed": 1031241
   },
   {
     "application_id": "app_050",
@@ -397,7 +397,7 @@
     "credit_score": 763,
     "credit_utilization_pct": 42,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1503190
+    "monthly_mortgage_payment_aed": 1503190
   },
   {
     "application_id": "app_051",
@@ -405,7 +405,7 @@
     "credit_score": 609,
     "credit_utilization_pct": 31,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_052",
@@ -413,7 +413,7 @@
     "credit_score": 635,
     "credit_utilization_pct": 21,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_053",
@@ -421,7 +421,7 @@
     "credit_score": 711,
     "credit_utilization_pct": 81,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 302535
+    "monthly_mortgage_payment_aed": 302535
   },
   {
     "application_id": "app_054",
@@ -429,7 +429,7 @@
     "credit_score": 717,
     "credit_utilization_pct": 70,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_055",
@@ -437,7 +437,7 @@
     "credit_score": 726,
     "credit_utilization_pct": 65,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_056",
@@ -445,7 +445,7 @@
     "credit_score": 598,
     "credit_utilization_pct": 46,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 410815
+    "monthly_mortgage_payment_aed": 410815
   },
   {
     "application_id": "app_057",
@@ -453,7 +453,7 @@
     "credit_score": 582,
     "credit_utilization_pct": 45,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 820716
+    "monthly_mortgage_payment_aed": 820716
   },
   {
     "application_id": "app_058",
@@ -461,7 +461,7 @@
     "credit_score": 616,
     "credit_utilization_pct": 40,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_059",
@@ -469,7 +469,7 @@
     "credit_score": 832,
     "credit_utilization_pct": 25,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_060",
@@ -477,7 +477,7 @@
     "credit_score": 574,
     "credit_utilization_pct": 53,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_061",
@@ -485,7 +485,7 @@
     "credit_score": 822,
     "credit_utilization_pct": 30,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_062",
@@ -493,7 +493,7 @@
     "credit_score": 778,
     "credit_utilization_pct": 64,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2550870
+    "monthly_mortgage_payment_aed": 2550870
   },
   {
     "application_id": "app_063",
@@ -501,7 +501,7 @@
     "credit_score": 819,
     "credit_utilization_pct": 79,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1434927
+    "monthly_mortgage_payment_aed": 1434927
   },
   {
     "application_id": "app_064",
@@ -509,7 +509,7 @@
     "credit_score": 829,
     "credit_utilization_pct": 51,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_065",
@@ -517,7 +517,7 @@
     "credit_score": 680,
     "credit_utilization_pct": 23,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 708494
+    "monthly_mortgage_payment_aed": 708494
   },
   {
     "application_id": "app_066",
@@ -525,7 +525,7 @@
     "credit_score": 805,
     "credit_utilization_pct": 23,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2136561
+    "monthly_mortgage_payment_aed": 2136561
   },
   {
     "application_id": "app_067",
@@ -533,7 +533,7 @@
     "credit_score": 734,
     "credit_utilization_pct": 77,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_068",
@@ -541,7 +541,7 @@
     "credit_score": 601,
     "credit_utilization_pct": 81,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1522511
+    "monthly_mortgage_payment_aed": 1522511
   },
   {
     "application_id": "app_069",
@@ -549,7 +549,7 @@
     "credit_score": 717,
     "credit_utilization_pct": 85,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_070",
@@ -557,7 +557,7 @@
     "credit_score": 764,
     "credit_utilization_pct": 27,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_071",
@@ -565,7 +565,7 @@
     "credit_score": 840,
     "credit_utilization_pct": 71,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_072",
@@ -573,7 +573,7 @@
     "credit_score": 801,
     "credit_utilization_pct": 29,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_073",
@@ -581,7 +581,7 @@
     "credit_score": 527,
     "credit_utilization_pct": 58,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_074",
@@ -589,7 +589,7 @@
     "credit_score": 578,
     "credit_utilization_pct": 68,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 457820
+    "monthly_mortgage_payment_aed": 457820
   },
   {
     "application_id": "app_075",
@@ -597,7 +597,7 @@
     "credit_score": 599,
     "credit_utilization_pct": 58,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_076",
@@ -605,7 +605,7 @@
     "credit_score": 813,
     "credit_utilization_pct": 72,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_077",
@@ -613,7 +613,7 @@
     "credit_score": 688,
     "credit_utilization_pct": 42,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1974361
+    "monthly_mortgage_payment_aed": 1974361
   },
   {
     "application_id": "app_078",
@@ -621,7 +621,7 @@
     "credit_score": 667,
     "credit_utilization_pct": 40,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_079",
@@ -629,7 +629,7 @@
     "credit_score": 589,
     "credit_utilization_pct": 78,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_080",
@@ -637,7 +637,7 @@
     "credit_score": 718,
     "credit_utilization_pct": 67,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1706220
+    "monthly_mortgage_payment_aed": 1706220
   },
   {
     "application_id": "app_081",
@@ -645,7 +645,7 @@
     "credit_score": 780,
     "credit_utilization_pct": 44,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2047501
+    "monthly_mortgage_payment_aed": 2047501
   },
   {
     "application_id": "app_082",
@@ -653,7 +653,7 @@
     "credit_score": 721,
     "credit_utilization_pct": 45,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_083",
@@ -661,7 +661,7 @@
     "credit_score": 525,
     "credit_utilization_pct": 78,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_084",
@@ -669,7 +669,7 @@
     "credit_score": 723,
     "credit_utilization_pct": 55,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1572621
+    "monthly_mortgage_payment_aed": 1572621
   },
   {
     "application_id": "app_085",
@@ -677,7 +677,7 @@
     "credit_score": 554,
     "credit_utilization_pct": 29,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_086",
@@ -685,7 +685,7 @@
     "credit_score": 730,
     "credit_utilization_pct": 41,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 378986
+    "monthly_mortgage_payment_aed": 378986
   },
   {
     "application_id": "app_087",
@@ -693,7 +693,7 @@
     "credit_score": 693,
     "credit_utilization_pct": 30,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1371548
+    "monthly_mortgage_payment_aed": 1371548
   },
   {
     "application_id": "app_088",
@@ -701,7 +701,7 @@
     "credit_score": 566,
     "credit_utilization_pct": 66,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 400480
+    "monthly_mortgage_payment_aed": 400480
   },
   {
     "application_id": "app_089",
@@ -709,7 +709,7 @@
     "credit_score": 781,
     "credit_utilization_pct": 16,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 674354
+    "monthly_mortgage_payment_aed": 674354
   },
   {
     "application_id": "app_090",
@@ -717,7 +717,7 @@
     "credit_score": 742,
     "credit_utilization_pct": 31,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2505896
+    "monthly_mortgage_payment_aed": 2505896
   },
   {
     "application_id": "app_091",
@@ -725,7 +725,7 @@
     "credit_score": 787,
     "credit_utilization_pct": 25,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1019404
+    "monthly_mortgage_payment_aed": 1019404
   },
   {
     "application_id": "app_092",
@@ -733,7 +733,7 @@
     "credit_score": 723,
     "credit_utilization_pct": 55,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1622180
+    "monthly_mortgage_payment_aed": 1622180
   },
   {
     "application_id": "app_093",
@@ -741,7 +741,7 @@
     "credit_score": 822,
     "credit_utilization_pct": 71,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1843896
+    "monthly_mortgage_payment_aed": 1843896
   },
   {
     "application_id": "app_094",
@@ -749,7 +749,7 @@
     "credit_score": 789,
     "credit_utilization_pct": 77,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_095",
@@ -757,7 +757,7 @@
     "credit_score": 616,
     "credit_utilization_pct": 40,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_096",
@@ -765,7 +765,7 @@
     "credit_score": 747,
     "credit_utilization_pct": 19,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_097",
@@ -773,7 +773,7 @@
     "credit_score": 553,
     "credit_utilization_pct": 27,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_098",
@@ -781,7 +781,7 @@
     "credit_score": 612,
     "credit_utilization_pct": 16,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_099",
@@ -789,7 +789,7 @@
     "credit_score": 583,
     "credit_utilization_pct": 58,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_100",
@@ -797,7 +797,7 @@
     "credit_score": 707,
     "credit_utilization_pct": 50,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1818468
+    "monthly_mortgage_payment_aed": 1818468
   },
   {
     "application_id": "app_101",
@@ -805,7 +805,7 @@
     "credit_score": 768,
     "credit_utilization_pct": 20,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_102",
@@ -813,7 +813,7 @@
     "credit_score": 709,
     "credit_utilization_pct": 82,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 864910
+    "monthly_mortgage_payment_aed": 864910
   },
   {
     "application_id": "app_103",
@@ -821,7 +821,7 @@
     "credit_score": 616,
     "credit_utilization_pct": 28,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_104",
@@ -829,7 +829,7 @@
     "credit_score": 541,
     "credit_utilization_pct": 18,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_105",
@@ -837,7 +837,7 @@
     "credit_score": 779,
     "credit_utilization_pct": 34,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_106",
@@ -845,7 +845,7 @@
     "credit_score": 814,
     "credit_utilization_pct": 44,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 554767
+    "monthly_mortgage_payment_aed": 554767
   },
   {
     "application_id": "app_107",
@@ -853,7 +853,7 @@
     "credit_score": 748,
     "credit_utilization_pct": 23,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2387302
+    "monthly_mortgage_payment_aed": 2387302
   },
   {
     "application_id": "app_108",
@@ -861,7 +861,7 @@
     "credit_score": 712,
     "credit_utilization_pct": 61,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2340498
+    "monthly_mortgage_payment_aed": 2340498
   },
   {
     "application_id": "app_109",
@@ -869,7 +869,7 @@
     "credit_score": 609,
     "credit_utilization_pct": 36,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_110",
@@ -877,7 +877,7 @@
     "credit_score": 598,
     "credit_utilization_pct": 58,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 749994
+    "monthly_mortgage_payment_aed": 749994
   },
   {
     "application_id": "app_111",
@@ -885,7 +885,7 @@
     "credit_score": 576,
     "credit_utilization_pct": 31,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2319354
+    "monthly_mortgage_payment_aed": 2319354
   },
   {
     "application_id": "app_112",
@@ -893,7 +893,7 @@
     "credit_score": 671,
     "credit_utilization_pct": 38,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_113",
@@ -901,7 +901,7 @@
     "credit_score": 712,
     "credit_utilization_pct": 72,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2725350
+    "monthly_mortgage_payment_aed": 2725350
   },
   {
     "application_id": "app_114",
@@ -909,7 +909,7 @@
     "credit_score": 596,
     "credit_utilization_pct": 25,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1130688
+    "monthly_mortgage_payment_aed": 1130688
   },
   {
     "application_id": "app_115",
@@ -917,7 +917,7 @@
     "credit_score": 529,
     "credit_utilization_pct": 15,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_116",
@@ -925,7 +925,7 @@
     "credit_score": 721,
     "credit_utilization_pct": 62,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_117",
@@ -933,7 +933,7 @@
     "credit_score": 559,
     "credit_utilization_pct": 49,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_118",
@@ -941,7 +941,7 @@
     "credit_score": 670,
     "credit_utilization_pct": 40,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2440937
+    "monthly_mortgage_payment_aed": 2440937
   },
   {
     "application_id": "app_119",
@@ -949,7 +949,7 @@
     "credit_score": 719,
     "credit_utilization_pct": 82,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_120",
@@ -957,7 +957,7 @@
     "credit_score": 719,
     "credit_utilization_pct": 64,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_121",
@@ -965,7 +965,7 @@
     "credit_score": 734,
     "credit_utilization_pct": 16,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2302383
+    "monthly_mortgage_payment_aed": 2302383
   },
   {
     "application_id": "app_122",
@@ -973,7 +973,7 @@
     "credit_score": 681,
     "credit_utilization_pct": 73,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2647490
+    "monthly_mortgage_payment_aed": 2647490
   },
   {
     "application_id": "app_123",
@@ -981,7 +981,7 @@
     "credit_score": 627,
     "credit_utilization_pct": 54,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1999480
+    "monthly_mortgage_payment_aed": 1999480
   },
   {
     "application_id": "app_124",
@@ -989,7 +989,7 @@
     "credit_score": 540,
     "credit_utilization_pct": 59,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 470517
+    "monthly_mortgage_payment_aed": 470517
   },
   {
     "application_id": "app_125",
@@ -997,7 +997,7 @@
     "credit_score": 701,
     "credit_utilization_pct": 20,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_126",
@@ -1005,7 +1005,7 @@
     "credit_score": 834,
     "credit_utilization_pct": 71,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 710653
+    "monthly_mortgage_payment_aed": 710653
   },
   {
     "application_id": "app_127",
@@ -1013,7 +1013,7 @@
     "credit_score": 724,
     "credit_utilization_pct": 61,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2426165
+    "monthly_mortgage_payment_aed": 2426165
   },
   {
     "application_id": "app_128",
@@ -1021,7 +1021,7 @@
     "credit_score": 794,
     "credit_utilization_pct": 40,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_129",
@@ -1029,7 +1029,7 @@
     "credit_score": 789,
     "credit_utilization_pct": 78,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1805173
+    "monthly_mortgage_payment_aed": 1805173
   },
   {
     "application_id": "app_130",
@@ -1037,7 +1037,7 @@
     "credit_score": 659,
     "credit_utilization_pct": 78,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_131",
@@ -1045,7 +1045,7 @@
     "credit_score": 618,
     "credit_utilization_pct": 68,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_132",
@@ -1053,7 +1053,7 @@
     "credit_score": 585,
     "credit_utilization_pct": 72,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_133",
@@ -1061,7 +1061,7 @@
     "credit_score": 712,
     "credit_utilization_pct": 37,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 727556
+    "monthly_mortgage_payment_aed": 727556
   },
   {
     "application_id": "app_134",
@@ -1069,7 +1069,7 @@
     "credit_score": 573,
     "credit_utilization_pct": 75,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1330927
+    "monthly_mortgage_payment_aed": 1330927
   },
   {
     "application_id": "app_135",
@@ -1077,7 +1077,7 @@
     "credit_score": 716,
     "credit_utilization_pct": 78,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1496738
+    "monthly_mortgage_payment_aed": 1496738
   },
   {
     "application_id": "app_136",
@@ -1085,7 +1085,7 @@
     "credit_score": 671,
     "credit_utilization_pct": 20,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_137",
@@ -1093,7 +1093,7 @@
     "credit_score": 803,
     "credit_utilization_pct": 45,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2377080
+    "monthly_mortgage_payment_aed": 2377080
   },
   {
     "application_id": "app_138",
@@ -1101,7 +1101,7 @@
     "credit_score": 797,
     "credit_utilization_pct": 43,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1088913
+    "monthly_mortgage_payment_aed": 1088913
   },
   {
     "application_id": "app_139",
@@ -1109,7 +1109,7 @@
     "credit_score": 662,
     "credit_utilization_pct": 85,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1524505
+    "monthly_mortgage_payment_aed": 1524505
   },
   {
     "application_id": "app_140",
@@ -1117,7 +1117,7 @@
     "credit_score": 526,
     "credit_utilization_pct": 18,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_141",
@@ -1125,7 +1125,7 @@
     "credit_score": 561,
     "credit_utilization_pct": 85,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2807497
+    "monthly_mortgage_payment_aed": 2807497
   },
   {
     "application_id": "app_142",
@@ -1133,7 +1133,7 @@
     "credit_score": 693,
     "credit_utilization_pct": 61,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1636557
+    "monthly_mortgage_payment_aed": 1636557
   },
   {
     "application_id": "app_143",
@@ -1141,7 +1141,7 @@
     "credit_score": 542,
     "credit_utilization_pct": 61,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2213955
+    "monthly_mortgage_payment_aed": 2213955
   },
   {
     "application_id": "app_144",
@@ -1149,7 +1149,7 @@
     "credit_score": 563,
     "credit_utilization_pct": 38,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1506069
+    "monthly_mortgage_payment_aed": 1506069
   },
   {
     "application_id": "app_145",
@@ -1157,7 +1157,7 @@
     "credit_score": 631,
     "credit_utilization_pct": 27,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1408655
+    "monthly_mortgage_payment_aed": 1408655
   },
   {
     "application_id": "app_146",
@@ -1165,7 +1165,7 @@
     "credit_score": 728,
     "credit_utilization_pct": 17,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_147",
@@ -1173,7 +1173,7 @@
     "credit_score": 594,
     "credit_utilization_pct": 80,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_148",
@@ -1181,7 +1181,7 @@
     "credit_score": 569,
     "credit_utilization_pct": 21,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_149",
@@ -1189,7 +1189,7 @@
     "credit_score": 617,
     "credit_utilization_pct": 25,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_150",
@@ -1197,7 +1197,7 @@
     "credit_score": 766,
     "credit_utilization_pct": 45,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2209069
+    "monthly_mortgage_payment_aed": 2209069
   },
   {
     "application_id": "app_151",
@@ -1205,7 +1205,7 @@
     "credit_score": 540,
     "credit_utilization_pct": 62,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_152",
@@ -1213,7 +1213,7 @@
     "credit_score": 711,
     "credit_utilization_pct": 39,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_153",
@@ -1221,7 +1221,7 @@
     "credit_score": 553,
     "credit_utilization_pct": 70,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_154",
@@ -1229,7 +1229,7 @@
     "credit_score": 578,
     "credit_utilization_pct": 38,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_155",
@@ -1237,7 +1237,7 @@
     "credit_score": 733,
     "credit_utilization_pct": 59,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2102806
+    "monthly_mortgage_payment_aed": 2102806
   },
   {
     "application_id": "app_156",
@@ -1245,7 +1245,7 @@
     "credit_score": 724,
     "credit_utilization_pct": 56,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_157",
@@ -1253,7 +1253,7 @@
     "credit_score": 668,
     "credit_utilization_pct": 50,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 348977
+    "monthly_mortgage_payment_aed": 348977
   },
   {
     "application_id": "app_158",
@@ -1261,7 +1261,7 @@
     "credit_score": 658,
     "credit_utilization_pct": 74,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_159",
@@ -1269,7 +1269,7 @@
     "credit_score": 717,
     "credit_utilization_pct": 72,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_160",
@@ -1277,7 +1277,7 @@
     "credit_score": 649,
     "credit_utilization_pct": 62,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2437231
+    "monthly_mortgage_payment_aed": 2437231
   },
   {
     "application_id": "app_161",
@@ -1285,7 +1285,7 @@
     "credit_score": 761,
     "credit_utilization_pct": 22,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1380871
+    "monthly_mortgage_payment_aed": 1380871
   },
   {
     "application_id": "app_162",
@@ -1293,7 +1293,7 @@
     "credit_score": 775,
     "credit_utilization_pct": 55,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2608093
+    "monthly_mortgage_payment_aed": 2608093
   },
   {
     "application_id": "app_163",
@@ -1301,7 +1301,7 @@
     "credit_score": 615,
     "credit_utilization_pct": 81,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_164",
@@ -1309,7 +1309,7 @@
     "credit_score": 635,
     "credit_utilization_pct": 41,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2532944
+    "monthly_mortgage_payment_aed": 2532944
   },
   {
     "application_id": "app_165",
@@ -1317,7 +1317,7 @@
     "credit_score": 714,
     "credit_utilization_pct": 82,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_166",
@@ -1325,7 +1325,7 @@
     "credit_score": 713,
     "credit_utilization_pct": 67,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_167",
@@ -1333,7 +1333,7 @@
     "credit_score": 743,
     "credit_utilization_pct": 20,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_168",
@@ -1341,7 +1341,7 @@
     "credit_score": 534,
     "credit_utilization_pct": 42,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 984834
+    "monthly_mortgage_payment_aed": 984834
   },
   {
     "application_id": "app_169",
@@ -1349,7 +1349,7 @@
     "credit_score": 689,
     "credit_utilization_pct": 62,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_170",
@@ -1357,7 +1357,7 @@
     "credit_score": 530,
     "credit_utilization_pct": 60,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1656744
+    "monthly_mortgage_payment_aed": 1656744
   },
   {
     "application_id": "app_171",
@@ -1365,7 +1365,7 @@
     "credit_score": 720,
     "credit_utilization_pct": 17,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1347953
+    "monthly_mortgage_payment_aed": 1347953
   },
   {
     "application_id": "app_172",
@@ -1373,7 +1373,7 @@
     "credit_score": 547,
     "credit_utilization_pct": 26,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_173",
@@ -1381,7 +1381,7 @@
     "credit_score": 835,
     "credit_utilization_pct": 83,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1270887
+    "monthly_mortgage_payment_aed": 1270887
   },
   {
     "application_id": "app_174",
@@ -1389,7 +1389,7 @@
     "credit_score": 810,
     "credit_utilization_pct": 53,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1613619
+    "monthly_mortgage_payment_aed": 1613619
   },
   {
     "application_id": "app_175",
@@ -1397,7 +1397,7 @@
     "credit_score": 631,
     "credit_utilization_pct": 51,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2245501
+    "monthly_mortgage_payment_aed": 2245501
   },
   {
     "application_id": "app_176",
@@ -1405,7 +1405,7 @@
     "credit_score": 602,
     "credit_utilization_pct": 23,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1593780
+    "monthly_mortgage_payment_aed": 1593780
   },
   {
     "application_id": "app_177",
@@ -1413,7 +1413,7 @@
     "credit_score": 822,
     "credit_utilization_pct": 55,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_178",
@@ -1421,7 +1421,7 @@
     "credit_score": 590,
     "credit_utilization_pct": 27,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_179",
@@ -1429,7 +1429,7 @@
     "credit_score": 566,
     "credit_utilization_pct": 34,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_180",
@@ -1437,7 +1437,7 @@
     "credit_score": 571,
     "credit_utilization_pct": 23,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_181",
@@ -1445,7 +1445,7 @@
     "credit_score": 728,
     "credit_utilization_pct": 76,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_182",
@@ -1453,7 +1453,7 @@
     "credit_score": 689,
     "credit_utilization_pct": 22,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_183",
@@ -1461,7 +1461,7 @@
     "credit_score": 740,
     "credit_utilization_pct": 20,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_184",
@@ -1469,7 +1469,7 @@
     "credit_score": 614,
     "credit_utilization_pct": 21,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_185",
@@ -1477,7 +1477,7 @@
     "credit_score": 666,
     "credit_utilization_pct": 33,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_186",
@@ -1485,7 +1485,7 @@
     "credit_score": 661,
     "credit_utilization_pct": 39,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2026970
+    "monthly_mortgage_payment_aed": 2026970
   },
   {
     "application_id": "app_187",
@@ -1493,7 +1493,7 @@
     "credit_score": 545,
     "credit_utilization_pct": 60,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 570576
+    "monthly_mortgage_payment_aed": 570576
   },
   {
     "application_id": "app_188",
@@ -1501,7 +1501,7 @@
     "credit_score": 736,
     "credit_utilization_pct": 31,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_189",
@@ -1509,7 +1509,7 @@
     "credit_score": 523,
     "credit_utilization_pct": 80,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_190",
@@ -1517,7 +1517,7 @@
     "credit_score": 672,
     "credit_utilization_pct": 33,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 407915
+    "monthly_mortgage_payment_aed": 407915
   },
   {
     "application_id": "app_191",
@@ -1525,7 +1525,7 @@
     "credit_score": 729,
     "credit_utilization_pct": 18,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2590519
+    "monthly_mortgage_payment_aed": 2590519
   },
   {
     "application_id": "app_192",
@@ -1533,7 +1533,7 @@
     "credit_score": 725,
     "credit_utilization_pct": 70,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_193",
@@ -1541,7 +1541,7 @@
     "credit_score": 729,
     "credit_utilization_pct": 40,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_194",
@@ -1549,7 +1549,7 @@
     "credit_score": 812,
     "credit_utilization_pct": 19,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_195",
@@ -1557,7 +1557,7 @@
     "credit_score": 818,
     "credit_utilization_pct": 23,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1037040
+    "monthly_mortgage_payment_aed": 1037040
   },
   {
     "application_id": "app_196",
@@ -1565,7 +1565,7 @@
     "credit_score": 708,
     "credit_utilization_pct": 66,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2484005
+    "monthly_mortgage_payment_aed": 2484005
   },
   {
     "application_id": "app_197",
@@ -1573,7 +1573,7 @@
     "credit_score": 632,
     "credit_utilization_pct": 62,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2261701
+    "monthly_mortgage_payment_aed": 2261701
   },
   {
     "application_id": "app_198",
@@ -1581,7 +1581,7 @@
     "credit_score": 694,
     "credit_utilization_pct": 59,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_199",
@@ -1589,7 +1589,7 @@
     "credit_score": 606,
     "credit_utilization_pct": 51,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2532536
+    "monthly_mortgage_payment_aed": 2532536
   },
   {
     "application_id": "app_200",
@@ -1597,7 +1597,7 @@
     "credit_score": 706,
     "credit_utilization_pct": 74,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2517223
+    "monthly_mortgage_payment_aed": 2517223
   },
   {
     "application_id": "app_201",
@@ -1605,7 +1605,7 @@
     "credit_score": 676,
     "credit_utilization_pct": 62,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_202",
@@ -1613,7 +1613,7 @@
     "credit_score": 567,
     "credit_utilization_pct": 81,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2047395
+    "monthly_mortgage_payment_aed": 2047395
   },
   {
     "application_id": "app_203",
@@ -1621,7 +1621,7 @@
     "credit_score": 817,
     "credit_utilization_pct": 53,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1558632
+    "monthly_mortgage_payment_aed": 1558632
   },
   {
     "application_id": "app_204",
@@ -1629,7 +1629,7 @@
     "credit_score": 634,
     "credit_utilization_pct": 73,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_205",
@@ -1637,7 +1637,7 @@
     "credit_score": 585,
     "credit_utilization_pct": 29,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2916926
+    "monthly_mortgage_payment_aed": 2916926
   },
   {
     "application_id": "app_206",
@@ -1645,7 +1645,7 @@
     "credit_score": 668,
     "credit_utilization_pct": 56,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_207",
@@ -1653,7 +1653,7 @@
     "credit_score": 721,
     "credit_utilization_pct": 15,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1074279
+    "monthly_mortgage_payment_aed": 1074279
   },
   {
     "application_id": "app_208",
@@ -1661,7 +1661,7 @@
     "credit_score": 792,
     "credit_utilization_pct": 59,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_209",
@@ -1669,7 +1669,7 @@
     "credit_score": 744,
     "credit_utilization_pct": 46,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2649252
+    "monthly_mortgage_payment_aed": 2649252
   },
   {
     "application_id": "app_210",
@@ -1677,7 +1677,7 @@
     "credit_score": 777,
     "credit_utilization_pct": 45,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_211",
@@ -1685,7 +1685,7 @@
     "credit_score": 597,
     "credit_utilization_pct": 47,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1614632
+    "monthly_mortgage_payment_aed": 1614632
   },
   {
     "application_id": "app_212",
@@ -1693,7 +1693,7 @@
     "credit_score": 729,
     "credit_utilization_pct": 42,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_213",
@@ -1701,7 +1701,7 @@
     "credit_score": 765,
     "credit_utilization_pct": 73,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_214",
@@ -1709,7 +1709,7 @@
     "credit_score": 637,
     "credit_utilization_pct": 48,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2634907
+    "monthly_mortgage_payment_aed": 2634907
   },
   {
     "application_id": "app_215",
@@ -1717,7 +1717,7 @@
     "credit_score": 750,
     "credit_utilization_pct": 51,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_216",
@@ -1725,7 +1725,7 @@
     "credit_score": 764,
     "credit_utilization_pct": 35,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_217",
@@ -1733,7 +1733,7 @@
     "credit_score": 784,
     "credit_utilization_pct": 24,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 832672
+    "monthly_mortgage_payment_aed": 832672
   },
   {
     "application_id": "app_218",
@@ -1741,7 +1741,7 @@
     "credit_score": 561,
     "credit_utilization_pct": 67,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 846057
+    "monthly_mortgage_payment_aed": 846057
   },
   {
     "application_id": "app_219",
@@ -1749,7 +1749,7 @@
     "credit_score": 750,
     "credit_utilization_pct": 21,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_220",
@@ -1757,7 +1757,7 @@
     "credit_score": 558,
     "credit_utilization_pct": 58,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2852677
+    "monthly_mortgage_payment_aed": 2852677
   },
   {
     "application_id": "app_221",
@@ -1765,7 +1765,7 @@
     "credit_score": 830,
     "credit_utilization_pct": 22,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_222",
@@ -1773,7 +1773,7 @@
     "credit_score": 762,
     "credit_utilization_pct": 51,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_223",
@@ -1781,7 +1781,7 @@
     "credit_score": 650,
     "credit_utilization_pct": 68,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_224",
@@ -1789,7 +1789,7 @@
     "credit_score": 728,
     "credit_utilization_pct": 43,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_225",
@@ -1797,7 +1797,7 @@
     "credit_score": 606,
     "credit_utilization_pct": 32,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_226",
@@ -1805,7 +1805,7 @@
     "credit_score": 636,
     "credit_utilization_pct": 84,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_227",
@@ -1813,7 +1813,7 @@
     "credit_score": 614,
     "credit_utilization_pct": 23,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_228",
@@ -1821,7 +1821,7 @@
     "credit_score": 566,
     "credit_utilization_pct": 38,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2753420
+    "monthly_mortgage_payment_aed": 2753420
   },
   {
     "application_id": "app_229",
@@ -1829,7 +1829,7 @@
     "credit_score": 686,
     "credit_utilization_pct": 77,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_230",
@@ -1837,7 +1837,7 @@
     "credit_score": 808,
     "credit_utilization_pct": 39,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_231",
@@ -1845,7 +1845,7 @@
     "credit_score": 737,
     "credit_utilization_pct": 59,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 331015
+    "monthly_mortgage_payment_aed": 331015
   },
   {
     "application_id": "app_232",
@@ -1853,7 +1853,7 @@
     "credit_score": 541,
     "credit_utilization_pct": 43,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_233",
@@ -1861,7 +1861,7 @@
     "credit_score": 744,
     "credit_utilization_pct": 24,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_234",
@@ -1869,7 +1869,7 @@
     "credit_score": 625,
     "credit_utilization_pct": 67,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_235",
@@ -1877,7 +1877,7 @@
     "credit_score": 652,
     "credit_utilization_pct": 16,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1335796
+    "monthly_mortgage_payment_aed": 1335796
   },
   {
     "application_id": "app_236",
@@ -1885,7 +1885,7 @@
     "credit_score": 652,
     "credit_utilization_pct": 41,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_237",
@@ -1893,7 +1893,7 @@
     "credit_score": 683,
     "credit_utilization_pct": 68,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1018101
+    "monthly_mortgage_payment_aed": 1018101
   },
   {
     "application_id": "app_238",
@@ -1901,7 +1901,7 @@
     "credit_score": 658,
     "credit_utilization_pct": 82,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_239",
@@ -1909,7 +1909,7 @@
     "credit_score": 659,
     "credit_utilization_pct": 59,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_240",
@@ -1917,7 +1917,7 @@
     "credit_score": 698,
     "credit_utilization_pct": 40,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2476538
+    "monthly_mortgage_payment_aed": 2476538
   },
   {
     "application_id": "app_241",
@@ -1925,7 +1925,7 @@
     "credit_score": 669,
     "credit_utilization_pct": 47,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_242",
@@ -1933,7 +1933,7 @@
     "credit_score": 537,
     "credit_utilization_pct": 21,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1954047
+    "monthly_mortgage_payment_aed": 1954047
   },
   {
     "application_id": "app_243",
@@ -1941,7 +1941,7 @@
     "credit_score": 813,
     "credit_utilization_pct": 62,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_244",
@@ -1949,7 +1949,7 @@
     "credit_score": 533,
     "credit_utilization_pct": 24,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 820386
+    "monthly_mortgage_payment_aed": 820386
   },
   {
     "application_id": "app_245",
@@ -1957,7 +1957,7 @@
     "credit_score": 792,
     "credit_utilization_pct": 56,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1842551
+    "monthly_mortgage_payment_aed": 1842551
   },
   {
     "application_id": "app_246",
@@ -1965,7 +1965,7 @@
     "credit_score": 618,
     "credit_utilization_pct": 20,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_247",
@@ -1973,7 +1973,7 @@
     "credit_score": 730,
     "credit_utilization_pct": 39,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2839518
+    "monthly_mortgage_payment_aed": 2839518
   },
   {
     "application_id": "app_248",
@@ -1981,7 +1981,7 @@
     "credit_score": 660,
     "credit_utilization_pct": 25,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1665394
+    "monthly_mortgage_payment_aed": 1665394
   },
   {
     "application_id": "app_249",
@@ -1989,7 +1989,7 @@
     "credit_score": 694,
     "credit_utilization_pct": 26,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1379484
+    "monthly_mortgage_payment_aed": 1379484
   },
   {
     "application_id": "app_250",
@@ -1997,7 +1997,7 @@
     "credit_score": 566,
     "credit_utilization_pct": 41,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_251",
@@ -2005,7 +2005,7 @@
     "credit_score": 724,
     "credit_utilization_pct": 61,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1059499
+    "monthly_mortgage_payment_aed": 1059499
   },
   {
     "application_id": "app_252",
@@ -2013,7 +2013,7 @@
     "credit_score": 525,
     "credit_utilization_pct": 22,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_253",
@@ -2021,7 +2021,7 @@
     "credit_score": 784,
     "credit_utilization_pct": 79,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_254",
@@ -2029,7 +2029,7 @@
     "credit_score": 821,
     "credit_utilization_pct": 46,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_255",
@@ -2037,7 +2037,7 @@
     "credit_score": 716,
     "credit_utilization_pct": 66,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_256",
@@ -2045,7 +2045,7 @@
     "credit_score": 773,
     "credit_utilization_pct": 79,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1274502
+    "monthly_mortgage_payment_aed": 1274502
   },
   {
     "application_id": "app_257",
@@ -2053,7 +2053,7 @@
     "credit_score": 716,
     "credit_utilization_pct": 72,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_258",
@@ -2061,7 +2061,7 @@
     "credit_score": 727,
     "credit_utilization_pct": 47,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_259",
@@ -2069,7 +2069,7 @@
     "credit_score": 586,
     "credit_utilization_pct": 56,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_260",
@@ -2077,7 +2077,7 @@
     "credit_score": 816,
     "credit_utilization_pct": 20,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_261",
@@ -2085,7 +2085,7 @@
     "credit_score": 643,
     "credit_utilization_pct": 60,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2840718
+    "monthly_mortgage_payment_aed": 2840718
   },
   {
     "application_id": "app_262",
@@ -2093,7 +2093,7 @@
     "credit_score": 739,
     "credit_utilization_pct": 84,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1516084
+    "monthly_mortgage_payment_aed": 1516084
   },
   {
     "application_id": "app_263",
@@ -2101,7 +2101,7 @@
     "credit_score": 785,
     "credit_utilization_pct": 19,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2557928
+    "monthly_mortgage_payment_aed": 2557928
   },
   {
     "application_id": "app_264",
@@ -2109,7 +2109,7 @@
     "credit_score": 784,
     "credit_utilization_pct": 34,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_265",
@@ -2117,7 +2117,7 @@
     "credit_score": 631,
     "credit_utilization_pct": 22,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_266",
@@ -2125,7 +2125,7 @@
     "credit_score": 776,
     "credit_utilization_pct": 72,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_267",
@@ -2133,7 +2133,7 @@
     "credit_score": 762,
     "credit_utilization_pct": 31,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2891344
+    "monthly_mortgage_payment_aed": 2891344
   },
   {
     "application_id": "app_268",
@@ -2141,7 +2141,7 @@
     "credit_score": 605,
     "credit_utilization_pct": 45,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_269",
@@ -2149,7 +2149,7 @@
     "credit_score": 699,
     "credit_utilization_pct": 40,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_270",
@@ -2157,7 +2157,7 @@
     "credit_score": 646,
     "credit_utilization_pct": 28,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_271",
@@ -2165,7 +2165,7 @@
     "credit_score": 546,
     "credit_utilization_pct": 41,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2238209
+    "monthly_mortgage_payment_aed": 2238209
   },
   {
     "application_id": "app_272",
@@ -2173,7 +2173,7 @@
     "credit_score": 647,
     "credit_utilization_pct": 46,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_273",
@@ -2181,7 +2181,7 @@
     "credit_score": 823,
     "credit_utilization_pct": 17,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_274",
@@ -2189,7 +2189,7 @@
     "credit_score": 522,
     "credit_utilization_pct": 43,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_275",
@@ -2197,7 +2197,7 @@
     "credit_score": 808,
     "credit_utilization_pct": 85,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2730942
+    "monthly_mortgage_payment_aed": 2730942
   },
   {
     "application_id": "app_276",
@@ -2205,7 +2205,7 @@
     "credit_score": 664,
     "credit_utilization_pct": 44,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 401413
+    "monthly_mortgage_payment_aed": 401413
   },
   {
     "application_id": "app_277",
@@ -2213,7 +2213,7 @@
     "credit_score": 606,
     "credit_utilization_pct": 74,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 317130
+    "monthly_mortgage_payment_aed": 317130
   },
   {
     "application_id": "app_278",
@@ -2221,7 +2221,7 @@
     "credit_score": 569,
     "credit_utilization_pct": 66,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2314191
+    "monthly_mortgage_payment_aed": 2314191
   },
   {
     "application_id": "app_279",
@@ -2229,7 +2229,7 @@
     "credit_score": 650,
     "credit_utilization_pct": 45,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_280",
@@ -2237,7 +2237,7 @@
     "credit_score": 736,
     "credit_utilization_pct": 66,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 579934
+    "monthly_mortgage_payment_aed": 579934
   },
   {
     "application_id": "app_281",
@@ -2245,7 +2245,7 @@
     "credit_score": 722,
     "credit_utilization_pct": 76,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2508521
+    "monthly_mortgage_payment_aed": 2508521
   },
   {
     "application_id": "app_282",
@@ -2253,7 +2253,7 @@
     "credit_score": 646,
     "credit_utilization_pct": 19,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_283",
@@ -2261,7 +2261,7 @@
     "credit_score": 799,
     "credit_utilization_pct": 19,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_284",
@@ -2269,7 +2269,7 @@
     "credit_score": 602,
     "credit_utilization_pct": 47,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_285",
@@ -2277,7 +2277,7 @@
     "credit_score": 799,
     "credit_utilization_pct": 34,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_286",
@@ -2285,7 +2285,7 @@
     "credit_score": 688,
     "credit_utilization_pct": 42,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_287",
@@ -2293,7 +2293,7 @@
     "credit_score": 745,
     "credit_utilization_pct": 63,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_288",
@@ -2301,7 +2301,7 @@
     "credit_score": 524,
     "credit_utilization_pct": 68,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1794439
+    "monthly_mortgage_payment_aed": 1794439
   },
   {
     "application_id": "app_289",
@@ -2309,7 +2309,7 @@
     "credit_score": 590,
     "credit_utilization_pct": 34,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2733492
+    "monthly_mortgage_payment_aed": 2733492
   },
   {
     "application_id": "app_290",
@@ -2317,7 +2317,7 @@
     "credit_score": 837,
     "credit_utilization_pct": 75,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 500078
+    "monthly_mortgage_payment_aed": 500078
   },
   {
     "application_id": "app_291",
@@ -2325,7 +2325,7 @@
     "credit_score": 586,
     "credit_utilization_pct": 54,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1305958
+    "monthly_mortgage_payment_aed": 1305958
   },
   {
     "application_id": "app_292",
@@ -2333,7 +2333,7 @@
     "credit_score": 692,
     "credit_utilization_pct": 41,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_293",
@@ -2341,7 +2341,7 @@
     "credit_score": 628,
     "credit_utilization_pct": 16,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1900112
+    "monthly_mortgage_payment_aed": 1900112
   },
   {
     "application_id": "app_294",
@@ -2349,7 +2349,7 @@
     "credit_score": 668,
     "credit_utilization_pct": 46,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_295",
@@ -2357,7 +2357,7 @@
     "credit_score": 701,
     "credit_utilization_pct": 76,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 1392149
+    "monthly_mortgage_payment_aed": 1392149
   },
   {
     "application_id": "app_296",
@@ -2365,7 +2365,7 @@
     "credit_score": 564,
     "credit_utilization_pct": 50,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_297",
@@ -2373,7 +2373,7 @@
     "credit_score": 750,
     "credit_utilization_pct": 17,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2485867
+    "monthly_mortgage_payment_aed": 2485867
   },
   {
     "application_id": "app_298",
@@ -2381,7 +2381,7 @@
     "credit_score": 558,
     "credit_utilization_pct": 48,
     "existing_mortgage": false,
-    "existing_mortgage_balance_aed": null
+    "monthly_mortgage_payment_aed": null
   },
   {
     "application_id": "app_299",
@@ -2389,7 +2389,7 @@
     "credit_score": 699,
     "credit_utilization_pct": 46,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 2720563
+    "monthly_mortgage_payment_aed": 2720563
   },
   {
     "application_id": "app_300",
@@ -2397,6 +2397,6 @@
     "credit_score": 563,
     "credit_utilization_pct": 79,
     "existing_mortgage": true,
-    "existing_mortgage_balance_aed": 407165
+    "monthly_mortgage_payment_aed": 407165
   }
 ]
