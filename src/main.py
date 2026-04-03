@@ -19,6 +19,7 @@ from sqlalchemy.orm import Session
 import config
 from database import Base, SessionLocal, engine, get_db, ensure_db_schema
 from schemas import EstimateIn, EstimateOut, UserOut, ApplicationIn, ApplicationOut, ApplicationListOut, ContractSignIn
+from agents.offer_summary_agent import summarize_offer
 
 import models  # noqa: F401 - registers models on Base
 
@@ -254,9 +255,8 @@ def on_startup() -> None:
     - Returns `None`. Ensures tables and columns exist, seeds mock data,
       and initializes the in-memory DLD price cache.
     """
-    Base.metadata.create_all(bind=engine)
-    # If you already have a persisted Postgres volume, new columns may be missing.
-    # ensure_db_schema may drop tables (e.g. to migrate id type), so re-run create_all after.
+    # Run schema migration FIRST — it may drop old integer-ID tables so that
+    # create_all() can recreate them with the new string-ID schema.
     ensure_db_schema()
     Base.metadata.create_all(bind=engine)
     db_session = SessionLocal()
@@ -548,6 +548,20 @@ def get_application_offer(application_id: str, db_session: Session = Depends(get
     expiry_date = now.replace(year=now.year + config.OFFER_EXPIRY_YEARS)
     repayment_end = expiry_date.replace(year=expiry_date.year + config.REPAYMENT_YEARS)
 
+    offer_summary = summarize_offer(
+        full_name=application.borrower_name,
+        email=application.borrower_email,
+        emirates_id=application.borrower_emirates_id,
+        phone="",
+        community=application.community,
+        property_type=application.property_type,
+        size_sqft=application.size_sqft,
+        estimated_value_aed=estimated_value,
+        approved_amount=max_lendable_value,
+        rental_rate=rental_rate,
+        expiry_date=expiry_date.strftime("%Y-%m-%d"),
+    )
+
     return {
         "application_id": application.id,
         "status": application.status,
@@ -556,6 +570,7 @@ def get_application_offer(application_id: str, db_session: Session = Depends(get
         "rental_rate": f"{rental_rate * 100:.0f}%",
         "expiry_date": expiry_date.strftime("%Y-%m-%d"),
         "repayment_end_date": repayment_end.strftime("%Y-%m-%d"),
+        "offer_summary": offer_summary,
     }
 
 
@@ -571,6 +586,7 @@ def generate_contract(application_id: str, db_session: Session = Depends(get_db)
 
     # Check if a contract already exists for this application
     existing = db_session.execute(
+    
         select(models.Contract).where(models.Contract.application_id == application_id)
     ).scalar_one_or_none()
     if existing is not None:
