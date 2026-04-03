@@ -7,7 +7,7 @@ The models in this module define the relational schema for:
 - DLD community-level price data used for valuation
 """
 
-from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, String, UniqueConstraint
+from sqlalchemy import Boolean, Column, DateTime, Float, ForeignKey, Integer, String, Text, UniqueConstraint
 from sqlalchemy.sql import func
 
 from database import Base
@@ -42,14 +42,36 @@ class Application(Base):
 
     __tablename__ = "applications"
 
-    id = Column(Integer, primary_key=True)
+    id = Column(String, primary_key=True)
     borrower_name = Column(String, nullable=False)
     borrower_email = Column(String, nullable=False, index=True)
     borrower_emirates_id = Column(String, nullable=False, index=True)
-    property_id = Column(Integer, ForeignKey("properties.id"), nullable=False, index=True)
+    community = Column(String, nullable=False)
+    property_type = Column(String, nullable=False)
+    size_sqft = Column(Float, nullable=False)
+    monthly_income_aed = Column(Float, nullable=True)
+    credit_score = Column(Integer, nullable=True)
+    credit_utilization_pct = Column(Float, nullable=True)
+    existing_mortgage = Column(Boolean, nullable=True)
+    monthly_mortgage_payment_aed = Column(Float, nullable=True)
+    property_id = Column(Integer, ForeignKey("properties.id"), nullable=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=True, index=True)
-    requested_amount = Column(Float, nullable=False)
+    requested_amount = Column(Float, nullable=True)
     status = Column(String, nullable=False, index=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+
+
+class Contract(Base):
+    """Generated contract for an approved HELOC application."""
+
+    __tablename__ = "contracts"
+
+    id = Column(String, primary_key=True)
+    application_id = Column(String, ForeignKey("applications.id"), nullable=False, index=True)
+    contract_text = Column(Text, nullable=False)
+    status = Column(String, nullable=False, default="draft")
+    signature_data = Column(String, nullable=True)
+    signed_at = Column(DateTime(timezone=True), nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
 

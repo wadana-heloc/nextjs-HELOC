@@ -70,11 +70,45 @@ def ensure_db_schema() -> None:
 
         if "applications" in tables:
             app_cols = {c["name"] for c in insp.get_columns("applications")}
-            if "user_id" not in app_cols:
-                conn.execute(text("ALTER TABLE applications ADD COLUMN user_id INTEGER"))
-            if "created_at" not in app_cols:
-                conn.execute(
-                    text(
-                        "ALTER TABLE applications ADD COLUMN created_at TIMESTAMPTZ NOT NULL DEFAULT now()"
+            # If the old integer-ID schema is detected, drop and let
+            # create_all() rebuild with the new string-ID schema.
+            id_col = next(
+                (c for c in insp.get_columns("applications") if c["name"] == "id"),
+                None,
+            )
+            if id_col and "INTEGER" in str(id_col["type"]).upper():
+                conn.execute(text("DROP TABLE applications"))
+            else:
+                if "community" not in app_cols:
+                    conn.execute(text("ALTER TABLE applications ADD COLUMN community VARCHAR"))
+                if "property_type" not in app_cols:
+                    conn.execute(text("ALTER TABLE applications ADD COLUMN property_type VARCHAR"))
+                if "size_sqft" not in app_cols:
+                    conn.execute(text("ALTER TABLE applications ADD COLUMN size_sqft FLOAT"))
+                if "monthly_income_aed" not in app_cols:
+                    conn.execute(text("ALTER TABLE applications ADD COLUMN monthly_income_aed FLOAT"))
+                if "credit_score" not in app_cols:
+                    conn.execute(text("ALTER TABLE applications ADD COLUMN credit_score INTEGER"))
+                if "credit_utilization_pct" not in app_cols:
+                    conn.execute(text("ALTER TABLE applications ADD COLUMN credit_utilization_pct FLOAT"))
+                if "existing_mortgage" not in app_cols:
+                    conn.execute(text("ALTER TABLE applications ADD COLUMN existing_mortgage BOOLEAN"))
+                if "monthly_mortgage_payment_aed" not in app_cols:
+                    conn.execute(text("ALTER TABLE applications ADD COLUMN monthly_mortgage_payment_aed FLOAT"))
+                if "user_id" not in app_cols:
+                    conn.execute(text("ALTER TABLE applications ADD COLUMN user_id INTEGER"))
+                if "created_at" not in app_cols:
+                    conn.execute(
+                        text(
+                            "ALTER TABLE applications ADD COLUMN created_at TIMESTAMPTZ NOT NULL DEFAULT now()"
+                        )
                     )
-                )
+
+        if "contracts" in tables:
+            contract_cols = {c["name"] for c in insp.get_columns("contracts")}
+            if "status" not in contract_cols:
+                conn.execute(text("ALTER TABLE contracts ADD COLUMN status VARCHAR DEFAULT 'draft'"))
+            if "signature_data" not in contract_cols:
+                conn.execute(text("ALTER TABLE contracts ADD COLUMN signature_data VARCHAR"))
+            if "signed_at" not in contract_cols:
+                conn.execute(text("ALTER TABLE contracts ADD COLUMN signed_at TIMESTAMPTZ"))

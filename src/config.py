@@ -29,10 +29,24 @@ FRONTEND_ALLOWED_ORIGINS: Final[Iterable[str]] = (
 # ---------------------------------------------------------------------------
 
 # These can be tuned without touching any other code.
-CREDIT_SCORE_MIN: Final[int] = 680
+CREDIT_SCORE_MIN: Final[int] = 657
 DBR_MAX: Final[float] = 0.5  # 50% debt-burden ratio cap
-LTV_MAX: Final[float] = 0.8  # 80% loan-to-value cap
-APPLICATION_INITIAL_STATUS: Final[str] = "pending"  # Initial status for new applications
+LTV_MAX: Final[float] = 0.6  # 60% max lendable value
+RENTAL_RATE: Final[float] = 0.05  # 5% annual rental rate
+OFFER_EXPIRY_YEARS: Final[int] = 10
+REPAYMENT_YEARS: Final[int] = 20
+
+# Application statuses
+APPLICATION_STATUS_PENDING: Final[str] = "pending"
+APPLICATION_STATUS_APPROVED: Final[str] = "approved"
+APPLICATION_STATUS_REJECTED: Final[str] = "rejected"
+APPLICATION_STATUS_EXPIRED: Final[str] = "expired"
+APPLICATION_INITIAL_STATUS: Final[str] = APPLICATION_STATUS_PENDING
+
+# Contract statuses
+CONTRACT_STATUS_DRAFT: Final[str] = "draft"
+CONTRACT_STATUS_SIGNED: Final[str] = "signed"
+CONTRACT_STATUS_REJECTED: Final[str] = "rejected"
 
 
 # ---------------------------------------------------------------------------
@@ -135,8 +149,37 @@ ELIGIBLE_PROPERTY_TYPES: Final[Set[str]] = {
 
 
 # ---------------------------------------------------------------------------
+# Contract template
+# ---------------------------------------------------------------------------
+
+CONTRACT_TEXT: Final[str] = """\
+### **CO-OWNERSHIP & RENT (IJARA) AGREEMENT**
+
+**1. THE CONCEPT**
+This is a **Rent-Only Co-Ownership** agreement. The Platform does not lend money; instead, it purchases a proportional ownership stake in the Property whenever the Homeowner draws funds.
+
+**2. OWNERSHIP STAKES**
+*   **Initial:** The Platform owns 0% until funds are accessed.
+*   **Dynamic:** The Platform's ownership share increases with every draw and decreases with every capital repayment.
+
+**3. RENT (IJARA)**
+*   The Homeowner shall pay monthly rent to the Platform.
+*   **Calculation:** Rent is charged **only** on the Platform's current ownership percentage.
+*   No interest (Riba) shall be charged.
+
+**4. ESCALATION & SALE**
+*   **Non-Payment:** If rent is not paid, the Platform's ownership share increases according to the agreed schedule in lieu of penalties.
+*   **Property Sale:** If the property is sold, proceeds are shared based on the ownership percentages at that time.
+
+**5. NO OBLIGATION**
+The Homeowner is not required to buy back the Platform's stake by a fixed date. The relationship remains a flexible co-ownership until the capital is voluntarily returned or the property is sold.\
+"""
+
+
+# ---------------------------------------------------------------------------
 # Data paths
 # ---------------------------------------------------------------------------
 
 DLD_PRICE_JSON_PATH: Final[Path] = BASE_DIR / "data" / "DLD_avg_price_per_sqft_by_community_property_type.json"
+DUMMY_APPLICANTS_JSON_PATH: Final[Path] = BASE_DIR / "data" / "dummy_applicants.json"
 

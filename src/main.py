@@ -7,16 +7,18 @@ This module wires together:
 - seeding logic for mock data and DLD price information
 """
 
+import json
+from datetime import datetime, timedelta
 from typing import Dict, List, Tuple
 
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy import select
+from sqlalchemy import select, func as sa_func
 from sqlalchemy.orm import Session
 
 import config
 from database import Base, SessionLocal, engine, get_db, ensure_db_schema
-from schemas import EstimateIn, EstimateOut, UserOut, ApplicationIn, ApplicationOut, ApplicationListOut
+from schemas import EstimateIn, EstimateOut, UserOut, ApplicationIn, ApplicationOut, ApplicationListOut, ContractSignIn
 
 import models  # noqa: F401 - registers models on Base
 
@@ -73,37 +75,62 @@ def seed_mock_data(db_session: Session) -> None:
         )
 
     if db_session.execute(select(models.Application)).first() is None:
-        first_user_id = db_session.execute(
-            select(models.User.id).order_by(models.User.id.asc())
-        ).scalar()
-        first_property_id = db_session.execute(
-            select(models.Property.id).order_by(models.Property.id.asc())
-        ).scalar()
-        if first_property_id is not None:
-            db_session.add_all(
-                [
-                    models.Application(
-                        borrower_name="Mariam Youssef",
-                        borrower_email="mariam@example.com",
-                        borrower_emirates_id="784-1992-1234567-1",
-                        user_id=first_user_id,
-                        property_id=first_property_id,
-                        requested_amount=950000.0,
-                        status="submitted",
-                    ),
-                    models.Application(
-                        borrower_name="Hamad Saeed",
-                        borrower_email="hamad@example.com",
-                        borrower_emirates_id="784-1989-7654321-2",
-                        user_id=first_user_id,
-                        property_id=first_property_id,
-                        requested_amount=1250000.0,
-                        status="under_review",
-                    ),
-                ]
+        dummy = _load_dummy_applicants()
+        dummy_by_id = {r["application_id"]: r for r in dummy}
+        seed_apps = [
+            {
+                "id": "app_001",
+                "borrower_name": "Mariam Youssef",
+                "borrower_email": "mariam@example.com",
+                "borrower_emirates_id": "784-1992-1234567-1",
+                "community": "Dubai Marina",
+                "property_type": "Apartment",
+                "size_sqft": 980.0,
+                "status": config.APPLICATION_STATUS_PENDING,
+            },
+            {
+                "id": "app_002",
+                "borrower_name": "Hamad Saeed",
+                "borrower_email": "hamad@example.com",
+                "borrower_emirates_id": "784-1989-7654321-2",
+                "community": "Business Bay",
+                "property_type": "Apartment",
+                "size_sqft": 1250.0,
+                "status": config.APPLICATION_STATUS_PENDING,
+            },
+        ]
+        for app_data in seed_apps:
+            fin = dummy_by_id.get(app_data["id"], {})
+            db_session.add(
+                models.Application(
+                    **app_data,
+                    monthly_income_aed=fin.get("monthly_income_aed"),
+                    credit_score=fin.get("credit_score"),
+                    credit_utilization_pct=fin.get("credit_utilization_pct"),
+                    existing_mortgage=fin.get("existing_mortgage"),
+                    monthly_mortgage_payment_aed=fin.get("monthly_mortgage_payment_aed"),
+                )
             )
 
     db_session.commit()
+
+
+def _load_dummy_applicants() -> List[dict]:
+    """Load the dummy applicants JSON file and return the list of records."""
+    with config.DUMMY_APPLICANTS_JSON_PATH.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _next_application_id(db_session: Session) -> str:
+    """Generate the next 'app_NNN' ID based on the current max in the DB."""
+    max_id = db_session.execute(
+        select(sa_func.max(models.Application.id))
+    ).scalar()
+    if max_id is None:
+        return "app_001"
+    # Extract numeric part from e.g. "app_012"
+    num = int(max_id.replace("app_", "")) + 1
+    return f"app_{num:03d}"
 
 
 def _normalize_community_and_type(community_name: str, property_type: str) -> Tuple[str, str]:
@@ -229,7 +256,9 @@ def on_startup() -> None:
     """
     Base.metadata.create_all(bind=engine)
     # If you already have a persisted Postgres volume, new columns may be missing.
+    # ensure_db_schema may drop tables (e.g. to migrate id type), so re-run create_all after.
     ensure_db_schema()
+    Base.metadata.create_all(bind=engine)
     db_session = SessionLocal()
     try:
         seed_mock_data(db_session)
@@ -388,22 +417,28 @@ def create_application(payload: ApplicationIn, db_session: Session = Depends(get
             },
         )
 
-    # Create Property record
-    property_obj = models.Property(
-        community=community,
-        property_type=property_type,
-        size_sqft=payload.size_sqft,
-    )
-    db_session.add(property_obj)
-    db_session.flush()  # Flush to get the auto-generated id
+    # Generate next app_NNN id
+    app_id = _next_application_id(db_session)
 
-    # Create Application record with initial status from config
+    # Look up dummy applicant financial data by the generated id
+    dummy = _load_dummy_applicants()
+    dummy_by_id = {r["application_id"]: r for r in dummy}
+    fin = dummy_by_id.get(app_id, {})
+
+    # Create Application record with property info and financial data
     application = models.Application(
+        id=app_id,
         borrower_name=full_name,
         borrower_email=email,
         borrower_emirates_id=emirates_id,
-        property_id=property_obj.id,
-        requested_amount=0.0,  # Default amount, can be calculated later
+        community=community,
+        property_type=property_type,
+        size_sqft=payload.size_sqft,
+        monthly_income_aed=fin.get("monthly_income_aed"),
+        credit_score=fin.get("credit_score"),
+        credit_utilization_pct=fin.get("credit_utilization_pct"),
+        existing_mortgage=fin.get("existing_mortgage"),
+        monthly_mortgage_payment_aed=fin.get("monthly_mortgage_payment_aed"),
         status=config.APPLICATION_INITIAL_STATUS,
     )
     db_session.add(application)
@@ -425,28 +460,16 @@ def get_applications(db_session: Session = Depends(get_db)):
     stmt = select(models.Application)
     applications = db_session.execute(stmt).scalars().all()
     return {
-        "applications": [
-            {
-                "id": app.id,
-                "borrower_name": app.borrower_name,
-                "borrower_email": app.borrower_email,
-                "borrower_emirates_id": app.borrower_emirates_id,
-                "property_id": app.property_id,
-                "user_id": app.user_id,
-                "requested_amount": app.requested_amount,
-                "status": app.status,
-            }
-            for app in applications
-        ]
+        "applications": [_application_to_dict(app) for app in applications]
     }
 
 
 @app.get("/applications/{application_id}")
-def get_application(application_id: int, db_session: Session = Depends(get_db)):
+def get_application(application_id: str, db_session: Session = Depends(get_db)):
     """Return a single HELOC application by ID.
 
     **Inputs**
-    - `application_id`: The ID of the application to retrieve.
+    - `application_id`: The string ID of the application (e.g. "app_007").
     - `db_session`: SQLAlchemy session dependency injected by FastAPI.
 
     **Outputs**
@@ -457,13 +480,160 @@ def get_application(application_id: int, db_session: Session = Depends(get_db)):
     app = db_session.execute(stmt).scalar_one_or_none()
     if app is None:
         raise HTTPException(status_code=404, detail="Application not found")
+    return _application_to_dict(app)
+
+
+@app.post("/check-eligibility/{application_id}")
+def check_eligibility(application_id: str, db_session: Session = Depends(get_db)):
+    """Check whether a HELOC application is eligible (approved) or not (rejected).
+
+    Rules:
+    1. AECB credit score must be >= CREDIT_SCORE_MIN (657).
+    2. DBR (monthly_mortgage_payment_aed / monthly_income_aed) must be <= DBR_MAX (50%).
+    """
+    stmt = select(models.Application).where(models.Application.id == application_id)
+    application = db_session.execute(stmt).scalar_one_or_none()
+    if application is None:
+        raise HTTPException(status_code=404, detail="Application not found")
+
+    # Validate that financial data exists
+    if application.credit_score is None or application.monthly_income_aed is None:
+        raise HTTPException(status_code=400, detail="Missing financial data for eligibility check")
+
+    # Rule 1: Credit score >= 657
+    credit_ok = application.credit_score >= config.CREDIT_SCORE_MIN
+
+    # Rule 2: DBR = monthly_mortgage_payment / monthly_income <= 50%
+    mortgage_payment = application.monthly_mortgage_payment_aed or 0.0
+    income = application.monthly_income_aed
+    dbr = (mortgage_payment / income) 
+    dbr_ok = dbr <= config.DBR_MAX
+
+    if credit_ok and dbr_ok:
+        new_status = config.APPLICATION_STATUS_APPROVED
+    else:
+        new_status = config.APPLICATION_STATUS_REJECTED
+
+    application.status = new_status
+    db_session.commit()
+
+    return {"id": application.id, "status": new_status}
+
+
+@app.get("/offers/{application_id}")
+def get_application_offer(application_id: str, db_session: Session = Depends(get_db)):
+    """Return the offer details for an approved application."""
+    stmt = select(models.Application).where(models.Application.id == application_id)
+    application = db_session.execute(stmt).scalar_one_or_none()
+    if application is None:
+        raise HTTPException(status_code=404, detail="Application not found")
+    if application.status != config.APPLICATION_STATUS_APPROVED:
+        raise HTTPException(status_code=400, detail="Application is not approved")
+
+    # Look up price per sqft from cache (same logic as /estimate)
+    community_norm, property_type_norm = _normalize_community_and_type(
+        application.community, application.property_type
+    )
+    price_per_sqft = price_cache.get((community_norm, property_type_norm))
+    if price_per_sqft is None:
+        raise HTTPException(
+            status_code=400,
+            detail="No DLD price data for this application's community/property type",
+        )
+
+    estimated_value = price_per_sqft * application.size_sqft
+    max_lendable_value = estimated_value * config.LTV_MAX
+    rental_rate = config.RENTAL_RATE
+    now = datetime.now()
+    expiry_date = now.replace(year=now.year + config.OFFER_EXPIRY_YEARS)
+    repayment_end = expiry_date.replace(year=expiry_date.year + config.REPAYMENT_YEARS)
+
+    return {
+        "application_id": application.id,
+        "status": application.status,
+        "estimated_value_aed": f"{estimated_value:,.2f}",
+        "max_lendable_value_aed": f"{max_lendable_value:,.2f}",
+        "rental_rate": f"{rental_rate * 100:.0f}%",
+        "expiry_date": expiry_date.strftime("%Y-%m-%d"),
+        "repayment_end_date": repayment_end.strftime("%Y-%m-%d"),
+    }
+
+
+@app.get("/contracts/generate/{application_id}")
+def generate_contract(application_id: str, db_session: Session = Depends(get_db)):
+    """Generate a contract record for an approved application."""
+    stmt = select(models.Application).where(models.Application.id == application_id)
+    application = db_session.execute(stmt).scalar_one_or_none()
+    if application is None:
+        raise HTTPException(status_code=404, detail="Application not found")
+    if application.status != config.APPLICATION_STATUS_APPROVED:
+        raise HTTPException(status_code=400, detail="Application is not approved")
+
+    # Check if a contract already exists for this application
+    existing = db_session.execute(
+        select(models.Contract).where(models.Contract.application_id == application_id)
+    ).scalar_one_or_none()
+    if existing is not None:
+        return {"contract_id": existing.id, "application_id": existing.application_id, "status": existing.status, "contract_text": existing.contract_text}
+
+    # Generate contract ID from application ID (e.g. app_007 -> contract_007)
+    contract_id = application_id.replace("app_", "contract_")
+
+    contract = models.Contract(
+        id=contract_id,
+        application_id=application_id,
+        contract_text=config.CONTRACT_TEXT,
+        status=config.CONTRACT_STATUS_DRAFT,
+    )
+    db_session.add(contract)
+    db_session.commit()
+
+    return {"contract_id": contract.id, "application_id": contract.application_id, "status": contract.status, "contract_text": contract.contract_text}
+
+
+@app.post("/contracts/sign")
+def sign_contract(payload: ContractSignIn, db_session: Session = Depends(get_db)):
+    """Digitally sign a contract by matching signature_data to the borrower name."""
+    contract = db_session.execute(
+        select(models.Contract).where(models.Contract.id == payload.contract_id)
+    ).scalar_one_or_none()
+    if contract is None:
+        raise HTTPException(status_code=404, detail="Contract not found")
+    if contract.status == config.CONTRACT_STATUS_SIGNED:
+        raise HTTPException(status_code=400, detail="Contract is already signed")
+
+    # Get the linked application to verify signature
+    application = db_session.execute(
+        select(models.Application).where(models.Application.id == contract.application_id)
+    ).scalar_one_or_none()
+
+    if payload.signature_data.strip() == application.borrower_name.strip():
+        contract.status = config.CONTRACT_STATUS_SIGNED
+    else:
+        contract.status = config.CONTRACT_STATUS_REJECTED
+
+    contract.signature_data = payload.signature_data
+    contract.signed_at = datetime.fromisoformat(payload.timestamp)
+    db_session.commit()
+
+    return {"contract_id": contract.id, "status": contract.status}
+
+
+def _application_to_dict(app: models.Application) -> dict:
+    """Convert an Application model instance to a response dictionary."""
     return {
         "id": app.id,
         "borrower_name": app.borrower_name,
         "borrower_email": app.borrower_email,
         "borrower_emirates_id": app.borrower_emirates_id,
-        "property_id": app.property_id,
-        "user_id": app.user_id,
-        "requested_amount": app.requested_amount,
+        "community": app.community,
+        "property_type": app.property_type,
+        "size_sqft": app.size_sqft,
+        "monthly_income_aed": app.monthly_income_aed,
+        "credit_score": app.credit_score,
+        "credit_utilization_pct": app.credit_utilization_pct,
+        "existing_mortgage": app.existing_mortgage,
+        "monthly_mortgage_payment_aed": app.monthly_mortgage_payment_aed,
         "status": app.status,
+        "application_date": app.created_at.isoformat() if app.created_at else None,
     }
